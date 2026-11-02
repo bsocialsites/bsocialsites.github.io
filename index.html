@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Md Kamruzzaman — Soil Scientist</title>
+<meta name="description" content="Soil scientist working on soil carbon, enzymes and nutrient cycling. MSc Ecotoxicology at MATE, Hungary. Open to PhD opportunities.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kamruzzaman17.github.io/kamruzzaman/">
+<meta property="og:title" content="Md Kamruzzaman — Soil Scientist">
+<meta property="og:description" content="Soil carbon, enzymes and nutrient cycling. 8 journal articles, 5 book chapters, 3 manuscripts under review. Open to PhD opportunities.">
+<meta property="og:image" content="https://kamruzzaman17.github.io/kamruzzaman/og-image.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{
+    /* Soil-profile palette: humus, umber, clay, loam ochre, moss */
+    --green:#9C4F22;--green-light:#B5651D;--green-pale:#F3EBE1;
+    --dark:#22170F;--mid:#3E2A1E;--text:#2A1F17;--muted:#6B5A4C;
+    --bg:#FAF7F2;--white:#ffffff;--accent:#C9A227;--accent-light:#E3C15A;
+    --moss:#4F6B3A;--moss-pale:#EEF2E8;
+    --serif:'Source Serif 4',Georgia,'Times New Roman',serif;
+    --shadow:0 4px 24px rgba(62,42,30,0.08);
+  }
+  html.dark-mode{
+    --green:#E0A458;--green-light:#EDB872;--green-pale:#2A2019;
+    --dark:#0E0A07;--mid:#1A130E;--text:#F1E8DD;--muted:#BBA996;
+    --bg:#14100C;--white:#1C1611;--accent:#E3C15A;--accent-light:#F0D27E;
+    --moss:#A9C08F;--moss-pale:#1D2318;
+    --shadow:0 4px 24px rgba(0,0,0,0.4);
+  }
+  html.dark-mode body{background:var(--bg)}
+  html.dark-mode .skill-card,html.dark-mode .exp-card{border-color:rgba(255,255,255,.08)}
+  html.dark-mode nav{background:rgba(20,16,12,0.88)}
+  html.dark-mode .mobile-menu{background:rgba(20,16,12,0.97)}
+
+  .theme-toggle{display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:10px;border:1.5px solid rgba(156,79,34,.2);background:transparent;cursor:pointer;transition:all .2s;font-size:1.1rem;margin-left:.5rem}
+  .theme-toggle:hover{background:var(--green-pale);border-color:var(--green)}
+  html{scroll-behavior:smooth}
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden}
+
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(250,247,242,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(156,79,34,0.12);padding:0 2rem}
+  .nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px}
+  .nav-logo{font-weight:700;font-size:1.1rem;color:var(--green);letter-spacing:-0.5px}
+  .nav-links{display:flex;gap:2rem;list-style:none}
+  .nav-links a{text-decoration:none;color:var(--muted);font-size:.9rem;font-weight:500;transition:color .2s}
+  .nav-links a:hover{color:var(--green)}
+
+  .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;border:none;background:none;border-radius:6px;transition:background .2s}
+  .hamburger:hover{background:rgba(156,79,34,.08)}
+  .hamburger span{display:block;width:22px;height:2px;background:var(--green);border-radius:2px;transition:all .3s ease}
+  .hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+  .hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+  .mobile-menu{display:none;position:fixed;top:64px;left:0;right:0;background:rgba(250,247,242,0.97);backdrop-filter:blur(16px);border-bottom:1px solid rgba(156,79,34,0.12);z-index:99;padding:1rem 2rem 1.5rem;transform:translateY(-8px);opacity:0;transition:all .25s ease}
+  .mobile-menu.open{transform:translateY(0);opacity:1}
+  .mobile-menu ul{list-style:none;display:flex;flex-direction:column;gap:.25rem}
+  .mobile-menu a{display:block;padding:.65rem 1rem;color:var(--muted);font-size:.95rem;font-weight:500;text-decoration:none;border-radius:8px;transition:all .2s}
+  .mobile-menu a:hover{color:var(--green);background:var(--green-pale)}
+
+  /* HERO */
+  .hero{min-height:100vh;display:flex;align-items:center;background:linear-gradient(135deg,var(--dark) 0%,var(--mid) 60%,#5A3A22 100%);position:relative;overflow:hidden;padding:6rem 2rem 4rem}
+  .hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+  .hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:4rem;align-items:center;width:100%;position:relative;z-index:1}
+  .hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(181,101,29,.18);border:1px solid rgba(181,101,29,.35);color:#E0A458;font-size:.8rem;font-weight:600;padding:.35rem .9rem;border-radius:999px;margin-bottom:1.5rem;letter-spacing:.5px;text-transform:uppercase}
+  .hero h1{font-size:clamp(2.2rem,5vw,3.8rem);font-weight:700;color:#fff;line-height:1.1;margin-bottom:.75rem;letter-spacing:-1px}
+  .hero-sub{font-size:1.1rem;color:#D9C3A5;margin-bottom:.5rem;font-weight:400}
+  .hero-desc{font-size:1rem;color:#B8A089;max-width:520px;margin-bottom:2.5rem;line-height:1.9}
+  .hero-stats{display:flex;gap:2.5rem;margin-bottom:2.5rem}
+  .hero-stat span:first-child{display:block;font-size:2.2rem;font-weight:700;color:#fff;line-height:1}
+  .hero-stat span:last-child{font-size:.8rem;color:#D9C3A5;text-transform:uppercase;letter-spacing:.5px}
+  .hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
+  .btn-primary{background:var(--green-light);color:#fff;border:none;padding:.75rem 1.75rem;border-radius:8px;font-size:.95rem;font-weight:600;cursor:pointer;text-decoration:none;transition:all .2s;display:inline-flex;align-items:center;gap:.5rem}
+  .btn-primary:hover{background:#C27330;transform:translateY(-2px);box-shadow:0 8px 24px rgba(181,101,29,.35)}
+  .btn-outline{background:transparent;color:#D9C3A5;border:1.5px solid rgba(217,195,165,.4);padding:.75rem 1.75rem;border-radius:8px;font-size:.95rem;font-weight:600;cursor:pointer;text-decoration:none;transition:all .2s;display:inline-flex;align-items:center;gap:.5rem}
+  .btn-outline:hover{border-color:#D9C3A5;color:#fff;background:rgba(217,195,165,.08)}
+
+  .hero-avatar{width:230px;height:230px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative}
+  .hero-avatar::after{content:'';position:absolute;inset:-10px;border-radius:50%;border:1.5px dashed rgba(181,101,29,.3);animation:spin 20s linear infinite;pointer-events:none}
+  .hero-avatar::before{content:'';position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(212,160,23,.35);box-shadow:0 0 30px rgba(181,101,29,.2);pointer-events:none}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .avatar-photo{width:230px;height:230px;border-radius:50%;object-fit:cover;object-position:center top;display:block;position:relative;z-index:1}
+  .avatar-fallback{display:none;font-size:4rem;font-weight:700;color:rgba(217,195,165,.8);position:absolute}
+  .avatar-photo.img-error{display:none}
+  .avatar-photo.img-error ~ .avatar-fallback{display:flex}
+
+  section{padding:5rem 2rem}
+  .section-inner{max-width:1100px;margin:0 auto}
+  .section-tag{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--green);margin-bottom:.5rem}
+  .section-title{font-size:clamp(1.8rem,3vw,2.5rem);font-weight:700;color:var(--text);margin-bottom:1rem;line-height:1.2}
+  .section-lead{font-size:1.05rem;color:var(--muted);max-width:600px;margin-bottom:3rem}
+
+  /* ABOUT */
+  #about{background:var(--white)}
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+  .profile-text{color:var(--muted);font-size:1rem;line-height:2;margin-bottom:1.5rem;letter-spacing:.01em}
+  .research-areas{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:2rem}
+  .ra-card{background:var(--green-pale);border:1px solid rgba(156,79,34,.15);border-radius:14px;padding:1.25rem;transition:transform .35s cubic-bezier(.34,1.56,.64,1),box-shadow .35s ease,border-color .3s,background .3s}
+  .ra-card:hover{transform:translateY(-5px) rotate(-0.4deg);box-shadow:0 12px 32px rgba(156,79,34,.14);border-color:rgba(156,79,34,.35);background:#EEDFCC}
+  .ra-icon{width:36px;height:36px;background:var(--green);border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:.75rem;font-size:1rem;transition:transform .35s cubic-bezier(.34,1.56,.64,1)}
+  .ra-card:hover .ra-icon{transform:scale(1.12) rotate(4deg)}
+  .ra-card h4{font-size:.9rem;font-weight:700;color:var(--text);margin-bottom:.35rem}
+  .ra-card p{font-size:.8rem;color:var(--muted);line-height:1.6}
+
+  .edu-timeline{display:flex;flex-direction:column;gap:1.5rem}
+  .edu-item{display:flex;gap:1rem;padding:1.25rem;background:var(--bg);border-radius:14px;border-left:3px solid var(--green);transition:transform .35s cubic-bezier(.34,1.56,.64,1),background .3s,box-shadow .3s}
+  .edu-item:hover{background:var(--green-pale);transform:translateX(6px) translateY(-2px);box-shadow:0 8px 24px rgba(156,79,34,.12)}
+  .edu-dot{width:40px;height:40px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.8rem;font-weight:700;color:#fff;transition:transform .35s cubic-bezier(.34,1.56,.64,1)}
+  .edu-item:hover .edu-dot{transform:scale(1.1)}
+  .edu-info h4{font-size:.95rem;font-weight:700;color:var(--text)}
+  .edu-info p{font-size:.82rem;color:var(--muted)}
+  .edu-info .cgpa{display:inline-block;background:rgba(156,79,34,.12);color:var(--green);font-size:.75rem;font-weight:700;padding:.2rem .6rem;border-radius:999px;margin-top:.35rem}
+
+  /* EXPERIENCE */
+  #experience{background:var(--bg)}
+  .exp-grid{display:flex;flex-direction:column;gap:1.5rem}
+  .exp-card{background:var(--white);border-radius:16px;padding:1.75rem;border:1px solid rgba(156,79,34,.1);box-shadow:var(--shadow);transition:all .25s;position:relative;overflow:hidden}
+  .exp-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--green)}
+  .exp-card:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(156,79,34,.15)}
+  .exp-header{display:flex;justify-content:space-between;align-items:start;margin-bottom:1rem;flex-wrap:wrap;gap:.5rem}
+  .exp-title{font-size:1.1rem;font-weight:700;color:var(--text)}
+  .exp-org{font-size:.9rem;color:var(--green);font-weight:600;margin-top:.2rem}
+  .exp-date{font-size:.8rem;color:var(--muted);background:var(--green-pale);padding:.3rem .75rem;border-radius:999px;white-space:nowrap}
+  .exp-bullets{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+  .exp-bullets li{font-size:.88rem;color:var(--muted);padding-left:1.2rem;position:relative;line-height:1.6}
+  .exp-bullets li::before{content:'▸';position:absolute;left:0;color:var(--green);font-size:.75rem;top:.1rem}
+
+  /* PUBLICATIONS */
+  #publications{background:var(--white)}
+  .pub-tabs{display:flex;gap:.5rem;margin-bottom:2rem;flex-wrap:wrap}
+  .pub-tab{padding:.5rem 1.25rem;border-radius:999px;font-size:.85rem;font-weight:600;border:1.5px solid rgba(156,79,34,.2);background:transparent;color:var(--muted);cursor:pointer;transition:all .2s}
+  .pub-tab.active{background:var(--green);color:#fff;border-color:var(--green)}
+  .pub-tab.review-tab{border-color:rgba(79,107,58,.35);color:var(--moss)}
+  .pub-tab.review-tab.active{background:var(--moss);color:#fff;border-color:var(--moss)}
+  html.dark-mode .pub-tab.review-tab.active{color:#14100C}
+  .pub-item.review-item{background:var(--moss-pale);border-color:rgba(79,107,58,.18)}
+  .pub-item.review-item:hover{background:var(--moss-pale);border-color:rgba(79,107,58,.4)}
+  .pub-num.review-num{background:var(--moss)}
+  html.dark-mode .pub-num.review-num{color:#14100C}
+  .pub-journal.review-journal{color:var(--moss)}
+  .pub-badge-review{font-size:.7rem;font-weight:700;padding:.15rem .55rem;border-radius:999px;background:rgba(79,107,58,.12);color:var(--moss);border:1px solid rgba(79,107,58,.3)}
+
+  .pub-list{display:flex;flex-direction:column;gap:1rem}
+  .pub-item{background:var(--bg);border-radius:12px;padding:1.25rem 1.5rem;border:1px solid rgba(156,79,34,.1);transition:all .2s;display:flex;gap:1.25rem;align-items:start}
+  .pub-item:hover{background:var(--green-pale);border-color:rgba(156,79,34,.25);transform:translateX(4px)}
+  .pub-num{width:32px;height:32px;border-radius:8px;background:var(--green);color:#fff;font-size:.85rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+  .pub-content{flex:1;min-width:0}
+  .pub-authors{font-size:.8rem;color:var(--muted);margin-bottom:.4rem;line-height:1.5}
+  .pub-content h4{font-size:.92rem;font-weight:600;color:var(--text);margin-bottom:.35rem;line-height:1.45}
+  .pub-meta{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center}
+  .pub-journal{font-size:.78rem;color:var(--green);font-weight:600}
+  .pub-year{font-size:.75rem;color:var(--muted)}
+  .pub-badge{font-size:.7rem;font-weight:700;padding:.15rem .5rem;border-radius:999px;background:rgba(212,160,23,.15);color:#8a6200}
+  .pub-badge-featured{font-size:.7rem;font-weight:700;padding:.15rem .55rem;border-radius:999px;background:linear-gradient(135deg,rgba(212,160,23,.22),rgba(240,200,74,.18));color:#6b4800;border:1px solid rgba(212,160,23,.4)}
+  .pub-link{font-size:.75rem;color:var(--green);text-decoration:none;opacity:.7}
+  .pub-link:hover{opacity:1}
+  .pub-actions{display:flex;align-items:center;gap:.5rem;margin-top:.5rem;flex-wrap:wrap}
+  .cite-btn{display:inline-flex;align-items:center;gap:.35rem;font-size:.72rem;font-weight:600;color:var(--muted);background:rgba(156,79,34,.07);border:1px solid rgba(156,79,34,.15);border-radius:6px;padding:.25rem .6rem;cursor:pointer;transition:all .2s;white-space:nowrap}
+  .cite-btn:hover{background:rgba(156,79,34,.14);color:var(--green);border-color:rgba(156,79,34,.3)}
+  .cite-btn.copied{background:rgba(156,79,34,.18);color:var(--green);border-color:var(--green)}
+
+
+  .hidden{display:none!important}
+  /* Figure previews in Under Review */
+  .fig-panel{margin-top:1rem;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.9rem;align-items:start}
+  .fig-panel.hidden{display:none!important}
+  .fig-panel .fig-note{grid-column:1/-1}
+  .pub-fig-wide{grid-column:1/-1;max-width:820px;width:100%;justify-self:center}
+  @media(max-width:700px){.fig-panel{grid-template-columns:1fr}}
+  .pub-fig{margin:0;background:#fff;border:1px solid rgba(79,107,58,.2);border-radius:10px;padding:.75rem}
+  .pub-fig img{width:100%;height:auto;display:block;border-radius:4px}
+  .pub-fig figcaption{font-size:.76rem;color:#2A1F17;line-height:1.55;margin-top:.6rem}
+  .fig-note{font-size:.72rem;color:var(--muted);line-height:1.5}
+  .fig-btn{color:var(--moss);border-color:rgba(79,107,58,.3);background:rgba(79,107,58,.07)}
+
+
+  /* Serif headings */
+  .hero h1,.section-title,.nav-logo{font-family:var(--serif);letter-spacing:-.3px}
+  .hero h1{font-weight:700;letter-spacing:-.5px}
+
+  /* Dark mode: text on light-ochre fills must be dark */
+  html.dark-mode .pub-tab.active,html.dark-mode .pub-num,html.dark-mode .edu-dot,html.dark-mode .btn-primary{color:#14100C}
+
+  /* Line icons */
+  .ico{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+  .theme-toggle{color:var(--green)}
+  .contact-icon{color:#E0A458}
+
+  /* Hero scholarly links */
+  .hero-links{display:flex;gap:1.25rem;flex-wrap:wrap;margin-top:1.5rem}
+  .hero-links a{color:#D9C3A5;font-size:.85rem;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(217,195,165,.35);padding-bottom:1px;transition:all .2s}
+  .hero-links a:hover{color:#fff;border-color:#fff}
+  .open-dot{width:8px;height:8px;border-radius:50%;background:#A9C08F;box-shadow:0 0 0 3px rgba(169,192,143,.25)}
+
+  /* Skill cards: thin clay top rule replaces icons */
+  .skill-card{border-top:3px solid var(--green)}
+  .ra-card{border-top:3px solid var(--green)}
+
+  /* NBC schematic */
+  .sk-shots{display:flex;gap:1rem;margin-top:2rem;overflow-x:auto;padding-bottom:.5rem;scroll-snap-type:x mandatory}
+  .sk-shots figure{flex:0 0 auto;width:220px;margin:0;scroll-snap-align:start}
+  .sk-shots img{width:100%;height:auto;display:block;border-radius:18px;border:1px solid rgba(156,79,34,.18);box-shadow:0 6px 18px rgba(0,0,0,.08)}
+  .sk-shots figcaption{font-size:.78rem;color:var(--muted);margin-top:.5rem;line-height:1.5;text-align:center}
+  .sk-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
+  .sk-tags span{font-size:.72rem;font-weight:600;padding:.2rem .6rem;border-radius:999px;background:var(--green-pale);color:var(--green)}
+  .nbc-credits{margin-top:1.1rem;padding-top:.9rem;border-top:1px solid rgba(156,79,34,.15);display:flex;flex-direction:column;gap:.35rem;font-size:.86rem;color:var(--text)}
+  .nbc-credits span{display:inline-block;min-width:92px;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--muted)}
+  .nbc-figure{margin-top:2rem;background:var(--bg);border:1px solid rgba(156,79,34,.12);border-radius:16px;padding:1.5rem}
+  .nbc-figure svg{width:100%;height:auto;display:block}
+  .nbc-figure figcaption{font-size:.8rem;color:var(--muted);margin-top:.75rem;line-height:1.6}
+  .nbc-figure .box{fill:var(--white);stroke:rgba(156,79,34,.35);stroke-width:1.2}
+  .nbc-figure .core{fill:var(--green-pale);stroke:var(--green);stroke-width:1.5}
+  .nbc-figure .out{fill:var(--white);stroke:rgba(156,79,34,.35);stroke-width:1.2}
+  .nbc-figure .t{fill:var(--text);font:600 13px system-ui,sans-serif}
+  .nbc-figure .s{fill:var(--muted);font:12px system-ui,sans-serif}
+  .nbc-figure .h{fill:var(--green);font:700 11px system-ui,sans-serif;letter-spacing:1px}
+  .nbc-figure .arr{stroke:var(--green);stroke-width:1.6;fill:none}
+  .nbc-figure .arrhead{fill:var(--green)}
+
+  /* Soil-horizon rail (desktop only) */
+  .horizon-rail{position:fixed;left:18px;top:50%;transform:translateY(-50%);z-index:90;display:flex;flex-direction:column;gap:4px}
+  .horizon-rail a{display:flex;align-items:center;gap:.6rem;text-decoration:none}
+  .horizon-rail .band{width:6px;height:56px;border-radius:3px;opacity:.35;transition:opacity .3s,width .3s}
+  .horizon-rail .lbl{font:700 .7rem var(--serif);color:var(--muted);opacity:0;transition:opacity .3s;white-space:nowrap}
+  .horizon-rail a.on .band{opacity:1;width:8px}
+  .horizon-rail a.on .lbl{opacity:1;color:var(--text)}
+  .horizon-rail:hover .lbl{opacity:.8}
+  .horizon-rail .hz-O{background:#3B2A1F}.horizon-rail .hz-A{background:#6B4A32}.horizon-rail .hz-B{background:#A0612F}.horizon-rail .hz-C{background:#C9A26B}
+  html.dark-mode .horizon-rail .hz-O{background:#6B4A32}
+  @media(max-width:1239px){.horizon-rail .lbl{display:none}}
+  @media(max-width:900px){.horizon-rail{display:none}}
+
+  /* SKILLS */
+  #skills{background:var(--bg)}
+  .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem}
+  @media(min-width:980px){.skills-grid{grid-template-columns:repeat(4,1fr)}}
+  .skill-card{background:var(--white);border-radius:16px;padding:1.75rem;border:1px solid rgba(156,79,34,.1);box-shadow:var(--shadow)}
+  .skill-card-header{display:flex;align-items:center;gap:.75rem;margin-bottom:1.25rem}
+  .skill-icon{width:42px;height:42px;border-radius:10px;background:var(--green);display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+  .skill-card h3{font-size:1rem;font-weight:700;color:var(--text)}
+  .skill-tags{display:flex;flex-wrap:wrap;gap:.5rem}
+  .skill-tag{font-size:.78rem;font-weight:500;padding:.3rem .75rem;border-radius:999px;background:var(--green-pale);color:var(--green);border:1px solid rgba(156,79,34,.15)}
+
+  /* AWARDS */
+  #awards{background:var(--white)}
+  .awards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.25rem}
+  .award-card{background:linear-gradient(135deg,var(--green-pale),rgba(243,235,225,.5));border:1px solid rgba(156,79,34,.15);border-radius:16px;padding:1.5rem;transition:all .2s;position:relative;overflow:hidden}
+  .award-card::after{content:'"';position:absolute;right:1rem;bottom:-1rem;font-size:6rem;color:rgba(156,79,34,.06);font-family:Georgia,serif;line-height:1}
+  .award-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:rgba(156,79,34,.3)}
+  .award-year{font-size:.75rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1px;margin-bottom:.5rem}
+  .award-card h4{font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:.35rem}
+  .award-card p{font-size:.82rem;color:var(--muted)}
+
+  /* CONTACT */
+  #contact{background:linear-gradient(135deg,var(--dark),var(--mid))}
+  #contact .section-tag{color:#E0A458}
+  #contact .section-title{color:#fff}
+  #contact .section-lead{color:#D9C3A5}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+  .contact-item{display:flex;align-items:center;gap:1rem;padding:1rem;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);margin-bottom:.75rem;transition:all .2s}
+  .contact-item:hover{background:rgba(255,255,255,.08)}
+  .contact-icon{width:40px;height:40px;border-radius:10px;background:rgba(181,101,29,.25);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem}
+  .contact-item a,.contact-item span{color:#EADBC8;font-size:.9rem;text-decoration:none}
+  .contact-item a:hover{color:#E0A458}
+  .social-links{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.5rem}
+  .social-btn{display:inline-flex;align-items:center;gap:.5rem;padding:.6rem 1.2rem;background:rgba(181,101,29,.15);border:1px solid rgba(181,101,29,.3);border-radius:8px;color:#D9C3A5;font-size:.83rem;font-weight:600;text-decoration:none;transition:all .2s}
+  .social-btn:hover{background:rgba(181,101,29,.3);color:#fff}
+
+  footer{background:var(--dark);color:#8A7765;text-align:center;padding:1.5rem;font-size:.82rem}
+  .fade-in{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+  .fade-in.visible{opacity:1;transform:none}
+
+  @media(max-width:768px){
+    .hero-inner{grid-template-columns:1fr}
+    .hero-avatar{display:none}
+    .about-grid,.contact-grid{grid-template-columns:1fr}
+    .research-areas{grid-template-columns:1fr}
+    .nav-links{display:none}
+    .hamburger{display:flex}
+    .mobile-menu{display:block}
+    .hero-stats{gap:1.5rem}
+  }
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Md Kamruzzaman","jobTitle":"Soil Scientist",
+ "url":"https://kamruzzaman17.github.io/kamruzzaman/",
+ "image":"https://kamruzzaman17.github.io/kamruzzaman/photo.jpg",
+ "email":"mailto:kamruzzaman.swe@gmail.com",
+ "affiliation":{"@type":"CollegeOrUniversity","name":"Hungarian University of Agriculture and Life Sciences (MATE)"},
+ "alumniOf":[{"@type":"CollegeOrUniversity","name":"Bangladesh Agricultural University"},{"@type":"CollegeOrUniversity","name":"Khulna University"}],
+ "knowsAbout":["Soil science","Soil biogeochemistry","Soil carbon","Soil enzymes","Nutrient cycling","Ecotoxicology"],
+ "sameAs":["https://orcid.org/0000-0002-5398-5371","https://scholar.google.com/citations?user=rb326vAAAAAJ","https://www.researchgate.net/profile/Md-Kamruzzaman-82","https://www.linkedin.com/in/md-kamruzzaman-65603a184/"]}
+</script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">Md Kamruzzaman</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#nbctool">NBC Tool</a></li>
+      <li><a href="#taxosoil">TaxoSoil App</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode"><svg class="ico" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu" role="navigation">
+  <ul>
+    <li><a href="#about" class="mobile-nav-link">About</a></li>
+    <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+    <li><a href="#publications" class="mobile-nav-link">Publications</a></li>
+    <li><a href="#nbctool" class="mobile-nav-link">NBC Tool</a></li>
+    <li><a href="#taxosoil" class="mobile-nav-link">TaxoSoil App</a></li>
+    <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+    <li><a href="#awards" class="mobile-nav-link">Awards</a></li>
+    <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+  </ul>
+</div>
+
+
+<div class="horizon-rail" role="navigation" aria-label="Page sections as soil horizons">
+  <a href="#about" data-hz="O" title="O horizon — Profile"><span class="band hz-O"></span><span class="lbl">O · Profile</span></a>
+  <a href="#experience" data-hz="A" title="A horizon — Work"><span class="band hz-A"></span><span class="lbl">A · Work</span></a>
+  <a href="#skills" data-hz="B" title="B horizon — Methods"><span class="band hz-B"></span><span class="lbl">B · Methods</span></a>
+  <a href="#awards" data-hz="C" title="C horizon — Record"><span class="band hz-C"></span><span class="lbl">C · Record</span></a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge">Soil Scientist &amp; Researcher</div>
+      <div class="hero-badge" style="background:rgba(169,192,143,.12);border-color:rgba(169,192,143,.35);color:#C8D9B3"><span class="open-dot"></span>Open to PhD Opportunities</div>
+      <h1>Md Kamruzzaman</h1>
+      <p class="hero-sub">Soil Biogeochemistry &middot; Ecotoxicology &middot; Nutrient Cycling</p>
+      <p class="hero-desc">MSc student in Ecotoxicology at the Hungarian University of Agriculture and Life Sciences (MATE), Stipendium Hungaricum Scholar. Research bridging soil ecosystem processes, biogeochemical cycling, and environmental contamination — integrating field experimentation, molecular tools, and quantitative modelling to advance sustainable agriculture and climate resilience.</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><span>8</span><span>Journal Articles</span></div>
+        <div class="hero-stat"><span>5</span><span>Book Chapters</span></div>
+        <div class="hero-stat"><span>3</span><span>Under Review</span></div>
+      </div>
+      <div class="hero-btns">
+        <a href="#publications" class="btn-primary">View Publications</a>
+        <a href="#contact" class="btn-outline">Get in Touch</a>
+      </div>
+      <div class="hero-links">
+        <a href="https://scholar.google.com/citations?user=rb326vAAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        <a href="https://orcid.org/0000-0002-5398-5371" target="_blank" rel="noopener noreferrer">ORCID 0000-0002-5398-5371</a>
+        <a href="https://www.researchgate.net/profile/Md-Kamruzzaman-82" target="_blank" rel="noopener noreferrer">ResearchGate</a>
+      </div>
+    </div>
+    <div class="hero-avatar">
+      <img class="avatar-photo"
+        src="photo.jpg"
+        alt="Md Kamruzzaman"
+        onerror="this.classList.add('img-error')" />
+      <span class="avatar-fallback">MK</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid fade-in">
+      <div>
+        <p class="section-tag">Who I Am</p>
+        <h2 class="section-title">Research Profile</h2>
+        <p class="profile-text">I am a soil scientist with training in ecotoxicology. My background spans soil biogeochemistry, nutrient cycling and contamination, built through research in Bangladesh and Hungary.</p>
+        <p class="profile-text">My work focuses on understanding how soil ecosystems respond to environmental stressors — from nitrogen fertilisation and greenhouse gas dynamics to heavy metal contamination and microbial community interactions. I integrate classical soil analyses with molecular tools and quantitative statistical modelling to link ecosystem processes to real-world agricultural and environmental outcomes.</p>
+        <p class="profile-text">My current work uses the LUCAS 2018 European soil survey and global literature data. I study how soil pH shapes enzyme ratios across Europe. I test whether routine laboratory data can predict soil carbon fractions in countries with no samples. I also ran a global meta-analysis on what drives permanganate-oxidizable carbon. All three manuscripts are now under review. Earlier, I developed the scientific models behind a field-validated nutrient balance calculator.</p>
+        <div class="research-areas">
+          <div class="ra-card"><h4>Nitrogen Cycling &amp; Nutrient Management</h4><p>Soil nitrogen supply estimation, NMI development, fertiliser optimisation, GHG emission dynamics</p></div>
+          <div class="ra-card"><h4>Soil Biogeochemistry &amp; Microbiology</h4><p>Enzyme ratios and soil pH, acid phosphatase, POM and MAOM carbon fractions, permanganate-oxidizable carbon (POXC), land-use effects on labile carbon, carbon and phosphorus cycling, FAME profiling, aggregate stability</p></div>
+          <div class="ra-card"><h4>Ecotoxicology &amp; Contamination</h4><p>Heavy metal fate and remediation, fluoride contamination, pollutant–soil interactions, soil nematode biomarkers</p></div>
+          <div class="ra-card"><h4>Quantitative Modelling &amp; Data Science</h4><p>OLS path analysis, SEM, mixed models, PCA, partial correlations, non-parametric statistics, reproducible R pipelines</p></div>
+        </div>
+      </div>
+      <div>
+        <p class="section-tag">Education</p>
+        <h2 class="section-title">Academic Background</h2>
+        <div class="edu-timeline">
+          <div class="edu-item">
+            <div class="edu-dot">HU</div>
+            <div class="edu-info">
+              <h4>MSc in Ecotoxicology</h4>
+              <p>Hungarian University of Agriculture and Life Sciences (MATE) &middot; Gödöllő, Hungary</p>
+              <p style="font-size:.8rem;color:var(--muted)">Sep 2025 – Present &middot; Stipendium Hungaricum Scholar</p>
+              <span class="cgpa">CGPA 3.90 / 5.00 (Two Semesters)</span>
+              <p style="font-size:.8rem;color:var(--text);margin-top:.5rem;line-height:1.5"><strong>Thesis:</strong> Effects of ivermectin on soil nematodes (ongoing)</p>
+              <p style="font-size:.78rem;color:var(--muted);margin-top:.5rem;line-height:1.6"><strong>Relevant coursework:</strong> Pesticide Biochemistry · Instrumental Analytics in Environmental Protection · Neurotoxicology · Hydrotoxicology · Methods in Ecotoxicology · Microbiological Methods in Ecotoxicology</p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-dot">BD</div>
+            <div class="edu-info">
+              <h4>MSc in Soil Science</h4>
+              <p>Bangladesh Agricultural University (BAU) &middot; Mymensingh, Bangladesh</p>
+              <p style="font-size:.8rem;color:var(--muted)">Apr 2022 – Sep 2023</p>
+              <span class="cgpa">CGPA 3.797 / 4.00</span>
+              <p style="font-size:.8rem;color:var(--text);margin-top:.5rem;line-height:1.5"><strong>Thesis:</strong> Estimating field-scaled nutrient balance for potato with integrated crop residue and fertilizer management</p>
+              <p style="font-size:.78rem;color:var(--muted);margin-top:.5rem;line-height:1.6"><strong>Relevant coursework:</strong> Soil, Water and Fertilizer Management Using Nuclear Techniques · Soil Fertility and Plant Nutrition · Soil Resilience and Climate Change · Soil Microbiology</p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-dot">KU</div>
+            <div class="edu-info">
+              <h4>BSc (Hons) Soil, Water &amp; Environment</h4>
+              <p>Khulna University &middot; Khulna, Bangladesh</p>
+              <p style="font-size:.8rem;color:var(--muted)">Jan 2017 – Feb 2022</p>
+              <span class="cgpa">CGPA 3.56 / 4.00</span>
+              <p style="font-size:.8rem;color:var(--text);margin-top:.5rem;line-height:1.5"><strong>Thesis:</strong> Synergistic effects of silicon and phosphorus co-application on rice growth, yield and nutrient use efficiency in saline soil &middot; <a href="https://doi.org/10.1007/s12633-023-02509-0" target="_blank" rel="noopener noreferrer" style="color:var(--green)">Published in <em>Silicon</em> ↗</a></p>
+              <p style="font-size:.78rem;color:var(--muted);margin-top:.5rem;line-height:1.6"><strong>Relevant coursework:</strong> Soil &amp; Environmental Biochemistry · Water &amp; Soil Pollution · Environmental Chemistry · Biostatistics · Soil &amp; Environmental Microbiology</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-inner">
+    <p class="section-tag">Career</p>
+    <h2 class="section-title">Research &amp; Work Experience</h2>
+    <div class="exp-grid fade-in">
+      <div class="exp-card">
+        <div class="exp-header">
+          <div><div class="exp-title">MSc Researcher — Ecotoxicology</div><div class="exp-org">MATE, Gödöllő, Hungary (Stipendium Hungaricum)</div></div>
+          <div class="exp-date">Sep 2025 – Present</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Studying the effects of ivermectin on soil nematodes, with molecular biomarkers as endpoints</li>
+          <li>Endpoints: glutathione S-transferase (GST), acetylcholinesterase (AChE) and total protein (Bradford), measured on a microplate reader</li>
+          <li>Calibrating the nematode biomass needed for a readable assay signal before the ivermectin exposure trials</li>
+        </ul>
+      </div>
+      <div class="exp-card">
+        <div class="exp-header">
+          <div><div class="exp-title">Project Officer — Soil Testing &amp; NRM</div><div class="exp-org">BRAC (Development Organisation), Bangladesh</div></div>
+          <div class="exp-date">Jan 2025 – Jun 2025</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Led soil testing interventions and provided technical supervision across farming communities</li>
+          <li>Conducted soil fertility and contamination analyses; issued GAP recommendations</li>
+          <li>Coordinated with government agencies and civil society for integrated soil health management</li>
+        </ul>
+      </div>
+      <div class="exp-card">
+        <div class="exp-header">
+          <div><div class="exp-title">Research Assistant — Soil Biogeochemistry</div><div class="exp-org">ESP Biogeocham Lab, BAU (BAURES, BAS, IAEA and USDA funded)</div></div>
+          <div class="exp-date">Apr 2022 – Sep 2023</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Field and laboratory research on climate-smart agricultural practices across multi-site trials</li>
+          <li>Soil and gas sampling; N₂O/CO₂ flux analysis under fertiliser treatments (IAEA TC project)</li>
+          <li>Developed nitrogen management indices, and the nutrient balance equations and loss-pathway models behind a fertilizer recommendation tool</li>
+          <li>Designed and implemented reproducible analytical pipelines in R for soil survey data</li>
+        </ul>
+      </div>
+      <div class="exp-card">
+        <div class="exp-header">
+          <div><div class="exp-title">Research Assistant — Soil Chemistry &amp; Mycology</div><div class="exp-org">Khulna University Research Cell</div></div>
+          <div class="exp-date">Dec 2021 – Apr 2022</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Investigated arbuscular mycorrhizal fungi effects on soil aggregate stability and microbial biomass</li>
+          <li>Soil physical and chemical characterisation across treatment plots</li>
+          <li>Published findings in Symbiosis (Springer)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications">
+  <div class="section-inner fade-in">
+    <p class="section-tag">Scholarly Output</p>
+    <h2 class="section-title">Publications</h2>
+    <div class="pub-tabs">
+      <button class="pub-tab review-tab active" onclick="showPubs('review',this)">Under Review (3)</button>
+      <button class="pub-tab" onclick="showPubs('journals',this)">Journal Articles (8)</button>
+      <button class="pub-tab" onclick="showPubs('chapters',this)">Book Chapters (5)</button>
+    </div>
+
+    <!-- JOURNAL ARTICLES -->
+    <div class="pub-list" id="review">
+      <div class="pub-item review-item">
+        <div class="pub-num review-num">1</div>
+        <div class="pub-content">
+          <h4>Acid phosphatase carries the soil pH signal in enzyme ratios measured at a fixed assay pH across Europe.</h4>
+          <p class="pub-authors"><strong>Kamruzzaman, M.</strong>, Akter, S., Hredoy, R.H., Al Fattah, A., &amp; Uddin, S.</p>
+          <div class="pub-meta">
+            <span class="pub-journal review-journal">Biology and Fertility of Soils</span>
+            <span class="pub-badge-review">Under review</span>
+            <span class="pub-year">2026</span>
+          </div>
+          <div class="pub-actions"><button class="cite-btn fig-btn" aria-expanded="false" aria-controls="figs-enzyme" onclick="toggleFigs(this)">Show figures</button></div>
+          <div class="fig-panel hidden" id="figs-enzyme">
+            <figure class="pub-fig">
+              <a href="figures/enzyme-ph-ratios.webp" target="_blank" rel="noopener"><img src="figures/enzyme-ph-ratios.webp" alt="Enzyme ratios BG:AP, BG:NAG and NAG:AP plotted against soil pH across 778 European sites, with a bar showing acid phosphatase accounts for 81% of the within-country BG:AP slope" loading="lazy"></a>
+              <figcaption>Across 778 European sites, the carbon-to-phosphorus enzyme ratio rises steeply with soil pH. Acid phosphatase, not the carbon enzyme, carries about four-fifths of that slope.</figcaption>
+            </figure>
+            <figure class="pub-fig">
+              <a href="figures/enzyme-within-country.webp" target="_blank" rel="noopener"><img src="figures/enzyme-within-country.webp" alt="Slopes of BG:AP and acid phosphatase on soil pH estimated separately in 16 European countries, compared with between-country slopes" loading="lazy"></a>
+              <figcaption>The pH effect is not a between-country artifact. It holds inside each of 16 countries, and within-country and between-country slopes agree.</figcaption>
+            </figure>
+            <figure class="pub-fig pub-fig-wide">
+              <a href="figures/enzyme-vector-analysis.webp" target="_blank" rel="noopener"><img src="figures/enzyme-vector-analysis.webp" alt="Enzyme vector analysis: vectors in C/(C+P) versus C/(C+N) space colored by soil pH and by land use, and vector angle by soil pH class" loading="lazy"></a>
+              <figcaption>Enzyme vector analysis. The vector angle falls from about 73° in the most acidic soils to about 49° at pH 7 and above, so vector stoichiometry tracks soil pH. Woodland soils sit at the steepest angles, cropland at the shallowest.</figcaption>
+            </figure>
+            <p class="fig-note">Submitted manuscript, under review at <em>Biology and Fertility of Soils</em>. Figures may change in revision. Data: LUCAS topsoil survey, made available by the European Commission through the European Soil Data Centre managed by the Joint Research Centre (JRC), https://esdac.jrc.ec.europa.eu/.</p>
+          </div>
+        </div>
+      </div>
+      <div class="pub-item review-item">
+        <div class="pub-num review-num">2</div>
+        <div class="pub-content">
+          <h4>Routine laboratory data predict soil carbon fractions in unsampled European countries better than a spectral benchmark.</h4>
+          <p class="pub-authors"><strong>Kamruzzaman, M.</strong></p>
+          <div class="pub-meta">
+            <span class="pub-journal review-journal">European Journal of Soil Science</span>
+            <span class="pub-badge-review">Under review</span>
+            <span class="pub-year">2026</span>
+          </div>
+          <div class="pub-actions"><button class="cite-btn fig-btn" aria-expanded="false" aria-controls="figs-carbon" onclick="toggleFigs(this)">Show figures</button></div>
+          <div class="fig-panel hidden" id="figs-carbon">
+            <figure class="pub-fig">
+              <a href="figures/carbon-heldout-countries.webp" target="_blank" rel="noopener"><img src="figures/carbon-heldout-countries.webp" alt="Leave-one-country-out accuracy of spectral and routine-property models for POM carbon, MAOM carbon and POM fraction, and the share of accuracy lost when countries are withheld" loading="lazy"></a>
+              <figcaption>In countries the models never saw, routine soil properties predict POM and MAOM carbon better than spectra. Spectral models lose far more accuracy when whole countries are held out.</figcaption>
+            </figure>
+            <figure class="pub-fig">
+              <a href="figures/carbon-texture-bias.webp" target="_blank" rel="noopener"><img src="figures/carbon-texture-bias.webp" alt="Mean bias of the published European POM and MAOM carbon layer across the soil texture triangle and by carbon quintile" loading="lazy"></a>
+              <figcaption>The published European fraction layer over-predicts carbon in sandy soils and under-predicts it in carbon-rich silty and clayey soils.</figcaption>
+            </figure>
+            <p class="fig-note">Submitted manuscript, under review at <em>European Journal of Soil Science</em>. Figures may change in revision. Data: LUCAS topsoil survey, made available by the European Commission through the European Soil Data Centre managed by the Joint Research Centre (JRC), https://esdac.jrc.ec.europa.eu/.</p>
+          </div>
+        </div>
+      </div>
+      <div class="pub-item review-item">
+        <div class="pub-num review-num">3</div>
+        <div class="pub-content">
+          <h4>Land use drives POXC more strongly than management: a global meta-analysis of depth and protocol dependence.</h4>
+          <p class="pub-authors"><strong>Kamruzzaman, M.</strong>, Akter, S., &amp; Uddin, S.</p>
+          <div class="pub-meta">
+            <span class="pub-journal review-journal">European Journal of Soil Science</span>
+            <span class="pub-badge-review">Under review</span>
+            <span class="pub-year">2026</span>
+          </div>
+          <div class="pub-actions"><button class="cite-btn fig-btn" aria-expanded="false" aria-controls="figs-poxc" onclick="toggleFigs(this)">Show figures</button></div>
+          <div class="fig-panel hidden" id="figs-poxc">
+            <figure class="pub-fig">
+              <a href="figures/poxc-effects.webp" target="_blank" rel="noopener"><img src="figures/poxc-effects.webp" alt="Percent change in permanganate-oxidizable carbon for 20 land-use conversions and four management practices, with 95% confidence intervals" loading="lazy"></a>
+              <figcaption>Converting land moves POXC up or down by large amounts, from about −40% to above +80%. Management practices shift it less, and only upward.</figcaption>
+            </figure>
+            <figure class="pub-fig">
+              <a href="figures/poxc-site-map.webp" target="_blank" rel="noopener"><img src="figures/poxc-site-map.webp" alt="World map of study sites in the global POXC meta-analysis database" loading="lazy"></a>
+              <figcaption>Study sites in the global database span six continents.</figcaption>
+            </figure>
+            <p class="fig-note">Submitted manuscript, under review at <em>European Journal of Soil Science</em>. Figures may change in revision. Data compiled from published field studies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pub-list hidden" id="journals">
+      <div class="pub-item">
+        <div class="pub-num">1</div>
+        <div class="pub-content">
+          <h4>Balancing of crop nutrients requirement to maintain agricultural sustainability</h4>
+          <p class="pub-authors">Jahangir, M. M. R., Rahman, M. S., <strong>Kamruzzaman, M.</strong>, &amp; Jahiruddin, M.</p>
+          <div class="pub-meta"><span class="pub-journal">Heliyon</span><span class="pub-year">2025</span><span class="pub-badge">Q1</span><span class="pub-badge-featured">Featured</span><a href="https://doi.org/10.1016/j.heliyon.2025.e43476" class="pub-link" target="_blank" rel="noopener noreferrer">DOI ↗</a></div>
+          <div class="pub-actions"><button class="cite-btn" onclick="copyCitation(this,'Jahangir, M. M. R., Rahman, M. S., Kamruzzaman, M., &amp; Jahiruddin, M. (2025). Balancing of crop nutrients requirement to maintain agricultural sustainability. Heliyon. https://doi.org/10.1016/j.heliyon.2025.e43476')">Copy citation</button></div>
+        </div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-num">2</div>
+        <div class="pub-content">
+          <h4>Microbial immobilization and phosphorus transformation in saline soil: Effects of organic amendments</h4>
+          <p class="pub-authors">Nur, M. A., <strong>Kamruzzaman, M.</strong>, &amp; Amin, M. S.</p>
+          <div class="pub-meta"><span class="pub-journal">Journal of Soil Science and Plant Nutrition</span><span class="pub-year">2025</span><span class="pub-badge">Q1</span><span class="pub-badge-featured">Featured</span><a href="https://doi.org/10.1007/s42729-025-02209-1" class="pub-link" target="_blank" rel="noopener noreferrer">DOI ↗</a></div>
+          <div class="pub-actions"><button class="cite-btn" onclick="copyCitation(this,'Nur, M. A., Kamruzzaman, M., &amp; Amin, M. S. (2025). Microbial immobilization and phosphorus transformation in saline soil: Effects of organic amendments. Journal of Soil Science and Plant Nutrition. https://doi.org/10.1007/s42729-025-02209-1')">Copy citation</button></div>
+        </div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-num">3</div>
+        <div class="pub-content">
+          <h4>Stability and heavy metals accumulation of soil aggregates under different land uses in southwest coastal Bangladesh</h4>
+          <p class="pub-authors">Sarder, M. P., <strong>Kamruzzaman, M.</strong>, Siddique, M. A. B., &amp; Halder, M.</p>
+          <div class="pub-meta"><span class="pub-journal">Heliyon</span><span class="pub-year">2024</span><span class="pub-badge">Q1</span><span class="pub-badge-featured">Featured</span><a href="https://doi.org/10.1016/j.heliyon.2024.e37806" class="pub-link" target="_blank" rel="noopener noreferrer">DOI ↗</a></div>
+          <div class="pub-actions"><button class="cite-btn" onclick="copyCitation(this,'Sarder, M. P., Kamruzzaman, M., Siddique, M. A. B., &amp; Halder, M. (2024). Stability and heavy metals accumulation of soil aggregates under different land uses in southwest coastal Bangladesh. Heliyon. https://doi.org/10.1016/j.heliyon.2024.e37806')">Copy citation</button></div>
+        </div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-num">4</div>
+        <div class="pub-content">
+          <h4>Mycorrhizal fungi increase plant nutrient uptake, aggregate stability and microbial biomass in clay soil</h4>
+          <p class="pub-authors">Akter, S., <strong>Kamruzzaman, M.</strong>, Sarder, M. P., Amin, M. S., Joardar, J. C., Islam, M. S., &amp; Halder, M.</p>
+          <div class="pub-meta"><span class="pub-journal">Symbiosis (Springer)</span><span class="pub-year">2024</span><span class="pub-badge">Q1</span><span class="pub-badge-featured">Featured</span><a href="https://doi.org/10.1007/s13199-024-00994-4" class="pub-link" target="_blank" rel="noopener noreferrer">DOI ↗</a></div>
+          <div class="pub-actions"><button class="cite-btn" onclick="copyCitation(this,'Akter, S., Kamruzzaman, M., Sarder, M. P., Amin, M. S., Joardar, J. C., Islam, M. S., &amp; Halder, M. (2024). Mycorrhizal fungi increase plant nutrient uptake, aggregate stability and microbial biomass in clay soil. Symbiosis. https://doi.org/10.1007/s13199-024-00994-4')">Copy citation</button></div>
+        </div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-num">5</div>
+        <div class="pub-content">
+          <h4>Crop residues integration with nitrogen rates reduces yield-scaled nitrous oxide emissions and improves maize yield and soil quality</h4>
+          <p class="pub-authors">Rahman, M. S., Ferdous, J., Mumu, N. J., <strong>Kamruzzaman, M.</strong>, Eckhardt, C., Zaman, M., &amp; Jahangir, M. M. R.</p>
+          <div class="pub-meta"><span class="pub-journal">Journal of Integrative Environmental Sciences</span><span class="pub-year">2024</span><a href="https://doi.org/10.1080/1943815X.2024.2310856" class="pub-link" target="_blank" rel="noopener noreferrer">DOI ↗</a></div>
+          <div class="pub-actions"><button class="cite-btn" onclick="copyCitation(this,'Rahman, M. S., Ferdous, J., Mumu, N. J., Kamruzzaman, M., Eckhardt, C., Zaman, M., &amp; Jahangir, M. M. R. (2024). Crop residues integration with nitrogen rates reduces yield-scaled nitrous oxide emissions and improves maize yield and soil quality. Journal of Integrative Environmental Sciences. https://doi.org/10.1080/1943815X.2024.2310856')">Copy citation</button></div>
+        </div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-num">6</div>
+        <div class="pub-content">
+          <h4>Integrating nitrogen fertilization with crop residues to improve nitrogen management in intensively managed cropping systems</h4>
+          <p class="pub-authors">Jahangir, M. M. R., <strong>Kamruzzaman, M.</strong>, Ferdous, J., Rahman, M. S., &amp; Islam, K. R.</p>
+          <div class="pub-meta"><span class="pub-journal">Archives of Agronomy and Soil Science</span><span class="pub-year">2023</span><span class="pub-badge">Q1</span><span class="pub-badge-featured">Featured</span><a href="https://doi.org/10.1080/03650340.2023.2283191" class="pub-link" target="_blank" rel="noopener noreferrer">DOI ↗</a></div>
+          <div class="pub-actions"><button class="cite-btn" onclick="copyCitation(this,'Jahangir, M. M. R., Kamruzzaman, M., Ferdous, J., Rahman, M. S., &amp; Islam, K. R. (2023). Integrating nitrogen fertilization with crop residues to improve nitrogen management in intensively managed cropping systems. Archives of Agronomy and Soil Science. https://doi.org/10.1080/03650340.2023.2283191')">Copy citation</button></div>
+        </div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-num">7</div>
+        <div class="pub-content">
+          <h4>Synergistic effects of silicon and phosphorus co-application on rice (<em>Oryza sativa</em> L.) growth, yield and nutrient use efficiency in saline soil</h4>
+          <p class="pub-authors"><strong>Kamruzzaman, M.</strong>, Akter, S., Khan, M. Z., &amp; Amin, M. S.</p>
+          <div class="pub-meta"><span class="pub-journal">Silicon (Springer)</span><span class="pub-year">2023</span><span class="pub-badge">Q1</span><span class="pub-badge-featured">Featured</span><a href="https://doi.org/10.1007/s12633-023-02509-0" class="pub-link" target="_blank" rel="noopener noreferrer">DOI ↗</a></div>
+          <div class="pub-actions"><button class="cite-btn" onclick="copyCitation(this,'Kamruzzaman, M., Akter, S., Khan, M. Z., &amp; Amin, M. S. (2023). Synergistic effects of silicon and phosphorus co-application on rice (Oryza sativa L.) growth, yield and nutrient use efficiency in saline soil. Silicon. https://doi.org/10.1007/s12633-023-02509-0')">Copy citation</button></div>
+        </div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-num">8</div>
+        <div class="pub-content">
+          <h4>Enhanced potassium fertilization improved rice (<em>Oryza sativa</em>) yield and nutrient uptake in coastal saline soil of Bangladesh</h4>
+          <p class="pub-authors">Akter, S., <strong>Kamruzzaman, M.</strong>, Khan, M. Z., &amp; Amin, M. S.</p>
+          <div class="pub-meta"><span class="pub-journal">Journal of Soil Science and Plant Nutrition</span><span class="pub-year">2023</span><span class="pub-badge">Q1</span><span class="pub-badge-featured">Featured</span><a href="https://doi.org/10.1007/s42729-023-01144-3" class="pub-link" target="_blank" rel="noopener noreferrer">DOI ↗</a></div>
+          <div class="pub-actions"><button class="cite-btn" onclick="copyCitation(this,'Akter, S., Kamruzzaman, M., Khan, M. Z., &amp; Amin, M. S. (2023). Enhanced potassium fertilization improved rice (Oryza sativa) yield and nutrient uptake in coastal saline soil of Bangladesh. Journal of Soil Science and Plant Nutrition. https://doi.org/10.1007/s42729-023-01144-3')">Copy citation</button></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOOK CHAPTERS -->
+    <div class="pub-list hidden" id="chapters">
+      <div class="pub-item">
+        <div class="pub-num">1</div>
+        <div class="pub-content">
+          <h4>Chromium Toxicity: Source, Distribution, Challenges, and Remediation</h4>
+          <p class="pub-authors"><strong>Kamruzzaman, M.</strong>, Hredoy, R. H., Shimo, F. J., Khan, M. S. U., Amin, M. S., Ritu, S. A., &amp; Uddin, S.</p>
+          <div class="pub-meta"><span class="pub-journal">Chromium Toxicity; Challenges and Solutions — Springer</span><span class="pub-year">2026</span><a href="https://doi.org/10.1007/978-3-032-14323-5_1" class="pub-link" target="_blank" rel="noopener noreferrer">DOI ↗</a></div>
+          <div class="pub-actions"><button class="cite-btn" onclick="copyCitation(this,'Kamruzzaman, M., Hredoy, R. H., Shimo, F. J., Khan, M. S. U., Amin, M. S., Ritu, S. A., &amp; Uddin, S. (2026). Chromium Toxicity: Source, Distribution, Challenges, and Remediation. In: Chromium Toxicity; Challenges and Solutions. Springer.')">Copy citation</button></div>
+        </div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-num">2</div>
+        <div class="pub-content">
+          <h4>Exposure to Environmental Chromium — An Ongoing Challenge</h4>
+          <p class="pub-authors">Khan, M. S. U., <strong>Kamruzzaman, M.</strong>, Ritu, S. A., Zaman, S. B., Afridi, N., Hasan, N. T., Mondal, S., Hasan, M., &amp; Uddin, S.</p>
+          <div class="pub-meta"><span class="pub-journal">Chromium Toxicity; Challenges and Solutions — Springer</span><span class="pub-year">2026</span><a href="https://doi.org/10.1007/978-3-032-14323-5_4" class="pub-link" target="_blank" rel="noopener noreferrer">DOI ↗</a></div>
+          <div class="pub-actions"><button class="cite-btn" onclick="copyCitation(this,'Khan, M. S. U., Kamruzzaman, M., Ritu, S. A., Zaman, S. B., Afridi, N., Hasan, N. T., Mondal, S., Hasan, M., &amp; Uddin, S. (2026). Exposure to Environmental Chromium — An Ongoing Challenge. In: Chromium Toxicity; Challenges and Solutions. Springer.')">Copy citation</button></div>
+        </div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-num">3</div>
+        <div class="pub-content">
+          <h4>Regulations and Policies for Chromium Emissions to the Environment</h4>
+          <p class="pub-authors">Hredoy, R. H., Shimo, F. J., <strong>Kamruzzaman, M.</strong>, Khan, M. S. U., Amin, M. S., Ritu, S. A., &amp; Uddin, S.</p>
+          <div class="pub-meta"><span class="pub-journal">Chromium Toxicity; Challenges and Solutions — Springer</span><span class="pub-year">2026</span><a href="https://doi.org/10.1007/978-3-032-14323-5_3" class="pub-link" target="_blank" rel="noopener noreferrer">DOI ↗</a></div>
+          <div class="pub-actions"><button class="cite-btn" onclick="copyCitation(this,'Hredoy, R. H., Shimo, F. J., Kamruzzaman, M., Khan, M. S. U., Amin, M. S., Ritu, S. A., &amp; Uddin, S. (2026). Regulations and Policies for Chromium Emissions to the Environment. In: Chromium Toxicity; Challenges and Solutions. Springer.')">Copy citation</button></div>
+        </div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-num">4</div>
+        <div class="pub-content">
+          <h4>Diving Deep: Exploring Fluoride in Groundwater — Causes, Implications, and Mitigation</h4>
+          <p class="pub-authors"><strong>Kamruzzaman, M.</strong>, Khan, M. S. U., Ritu, S. A., Khanom, S., Hossain, M., Islam, M. R., &amp; Uddin, S.</p>
+          <div class="pub-meta"><span class="pub-journal">Fluorides in Drinking Water — Springer Nature Switzerland</span><span class="pub-year">2025</span><a href="https://doi.org/10.1007/978-3-031-77247-4_8" class="pub-link" target="_blank" rel="noopener noreferrer">DOI ↗</a></div>
+          <div class="pub-actions"><button class="cite-btn" onclick="copyCitation(this,'Kamruzzaman, M., Khan, M. S. U., Ritu, S. A., Khanom, S., Hossain, M., Islam, M. R., &amp; Uddin, S. (2025). Diving Deep: Exploring Fluoride in Groundwater. In: Fluorides in Drinking Water. Springer Nature Switzerland.')">Copy citation</button></div>
+        </div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-num">5</div>
+        <div class="pub-content">
+          <h4>Harnessing Biochar: A Sustainable Approach to Fluoride Removal from Water</h4>
+          <p class="pub-authors">Khan, M. S. U., <strong>Kamruzzaman, M.</strong>, Ritu, S. A., Khanom, S., Hossain, M., Islam, M. R., &amp; Uddin, S.</p>
+          <div class="pub-meta"><span class="pub-journal">Fluorides in Drinking Water — Springer Nature Switzerland</span><span class="pub-year">2025</span><a href="https://doi.org/10.1007/978-3-031-77247-4_9" class="pub-link" target="_blank" rel="noopener noreferrer">DOI ↗</a></div>
+          <div class="pub-actions"><button class="cite-btn" onclick="copyCitation(this,'Khan, M. S. U., Kamruzzaman, M., Ritu, S. A., Khanom, S., Hossain, M., Islam, M. R., &amp; Uddin, S. (2025). Harnessing Biochar: A Sustainable Approach to Fluoride Removal from Water. In: Fluorides in Drinking Water. Springer Nature Switzerland.')">Copy citation</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-inner fade-in">
+    <p class="section-tag">Capabilities</p>
+    <h2 class="section-title">Skills &amp; Competencies</h2>
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <div class="skill-card-header"><h3>Laboratory &amp; Field</h3></div>
+        <div class="skill-tags">
+          <span class="skill-tag">Soil physicochemical analysis</span>
+          <span class="skill-tag">C/N analysis</span>
+          <span class="skill-tag">Gas chromatography (N₂O/GHG)</span>
+          <span class="skill-tag">Enzymatic bioassays (ChE, GPx, HSP)</span>
+          <span class="skill-tag">ELISA</span>
+          <span class="skill-tag">PCR / qPCR</span>
+          <span class="skill-tag">Gel electrophoresis</span>
+          <span class="skill-tag">Spectrophotometry</span>
+          <span class="skill-tag">Multi-site field sampling</span>
+          <span class="skill-tag">Chloroform fumigation–extraction (Cmic)</span>
+          <span class="skill-tag">Fluorometric enzyme assays (BG, AP)</span>
+          <span class="skill-tag">FAME extraction &amp; profiling</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-header"><h3>Analytical Instrumentation</h3></div>
+        <div class="skill-tags">
+          <span class="skill-tag">GC–MS (EI)</span>
+          <span class="skill-tag">LC–MS (ESI / APCI)</span>
+          <span class="skill-tag">HPLC / UHPLC (UV, FLD)</span>
+          <span class="skill-tag">Isocratic &amp; gradient elution</span>
+          <span class="skill-tag">UV–Vis &amp; fluorescence spectroscopy</span>
+          <span class="skill-tag">Spectral library searching</span>
+          <span class="skill-tag">Fragmentation pattern interpretation</span>
+          <span class="skill-tag">TIC / extracted ion monitoring</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-header"><h3>Sample Preparation &amp; Extraction</h3></div>
+        <div class="skill-tags">
+          <span class="skill-tag">Solid Phase Extraction (SPE)</span>
+          <span class="skill-tag">Liquid–Liquid Extraction (LLE)</span>
+          <span class="skill-tag">QuEChERS (dispersive SPE)</span>
+          <span class="skill-tag">SPME</span>
+          <span class="skill-tag">POCIS passive sampling</span>
+          <span class="skill-tag">Chemical derivatization (methylation, silylation)</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-header"><h3>Regulatory &amp; Risk Assessment</h3></div>
+        <div class="skill-tags">
+          <span class="skill-tag">ADI / MRL / NOEL calculation</span>
+          <span class="skill-tag">LOD / LOQ (S/N ratio)</span>
+          <span class="skill-tag">Method validation &amp; recovery rates</span>
+          <span class="skill-tag">Internal standards (isotope labelling)</span>
+          <span class="skill-tag">log Kow partitioning</span>
+          <span class="skill-tag">Pollutant fate &amp; leaching modelling</span>
+          <span class="skill-tag">pH–dissociation equilibria</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-header"><h3>Statistical Analysis</h3></div>
+        <div class="skill-tags">
+          <span class="skill-tag">OLS path analysis</span>
+          <span class="skill-tag">Standardised regression (Z-scored)</span>
+          <span class="skill-tag">Spearman &amp; partial correlations</span>
+          <span class="skill-tag">Wilcoxon / Kruskal–Wallis tests</span>
+          <span class="skill-tag">Principal Component Analysis (PCA)</span>
+          <span class="skill-tag">Logistic regression (MAR testing)</span>
+          <span class="skill-tag">Rank-biserial effect sizes</span>
+          <span class="skill-tag">Interaction term testing</span>
+          <span class="skill-tag">Missing data analysis</span>
+          <span class="skill-tag">Mixed models (lme4)</span>
+          <span class="skill-tag">SEM (lavaan)</span>
+          <span class="skill-tag">Ecoenzymatic stoichiometry</span>
+          <span class="skill-tag">SPSS &amp; Minitab</span>
+          <span class="skill-tag">GraphPad Prism</span>
+          <span class="skill-tag">OriginPro</span>
+          <span class="skill-tag">ArcGIS / QGIS</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-header"><h3>R Programming</h3></div>
+        <div class="skill-tags">
+          <span class="skill-tag">tidyverse / dplyr</span>
+          <span class="skill-tag">ggplot2 &amp; patchwork</span>
+          <span class="skill-tag">rstatix &amp; stats</span>
+          <span class="skill-tag">lavaan (SEM)</span>
+          <span class="skill-tag">vegan (community ecology)</span>
+          <span class="skill-tag">Hmisc &amp; ggcorrplot</span>
+          <span class="skill-tag">ppcor (partial correlations)</span>
+          <span class="skill-tag">broom &amp; janitor</span>
+          <span class="skill-tag">sf &amp; rnaturalearth (spatial)</span>
+          <span class="skill-tag">Reproducible reviewer scripts</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-header"><h3>Bioinformatics</h3></div>
+        <div class="skill-tags">
+          <span class="skill-tag">BLASTN / BLASTX / BLASTP</span>
+          <span class="skill-tag">Clustal Omega</span>
+          <span class="skill-tag">MEGA (phylogenetics)</span>
+          <span class="skill-tag">16S rRNA metabarcoding</span>
+          <span class="skill-tag">ORF Finder</span>
+          <span class="skill-tag">SMART / Pfam</span>
+          <span class="skill-tag">Proksee</span>
+          <span class="skill-tag">OrthoVenn3</span>
+          <span class="skill-tag">TYGS</span>
+          <span class="skill-tag">NEBcutter</span>
+          <span class="skill-tag">ARG/metagenomics data processing</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-header"><h3>Research &amp; Communication</h3></div>
+        <div class="skill-tags">
+          <span class="skill-tag">Peer-reviewed manuscript writing</span>
+          <span class="skill-tag">Peer review response</span>
+          <span class="skill-tag">Multi-manuscript programme management</span>
+          <span class="skill-tag">Continental soil survey analysis</span>
+          <span class="skill-tag">Reproducible research pipelines</span>
+          <span class="skill-tag">Figure design (publication quality)</span>
+          <span class="skill-tag">Springer book chapter authorship</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED TOOL -->
+<section id="nbctool" style="background:var(--white)">
+  <div class="section-inner fade-in">
+    <p class="section-tag">Independent Build</p>
+    <h2 class="section-title">Featured Tool: Nutrient Balance Calculator</h2>
+    <p class="section-lead">A field-scale decision-support tool I built independently — regression equations, leaching/gaseous loss models, and crop uptake constants validated across three Bangladesh agroecological zones.</p>
+    <div class="exp-card" style="display:flex;flex-wrap:wrap;gap:2rem;align-items:center;justify-content:space-between">
+      <div style="flex:1;min-width:260px">
+        <ul class="exp-bullets">
+          <li>Independently developed all underlying regression equations and loss models (leaching, gaseous N loss)</li>
+          <li>Crop nutrient uptake constants calibrated and validated across three agroecological zones in Bangladesh</li>
+          <li>Published as a live, public web tool — a timestamped, citable record of the underlying scientific contribution</li>
+        </ul>
+        <div class="nbc-credits">
+          <div><span>Field data</span><a href="https://www.researchgate.net/profile/Md-Rahman-1558" target="_blank" rel="noopener noreferrer" style="color:var(--green);font-weight:600">Dr. Md. Safinur Rahman</a></div>
+          <div><span>Supervisor</span><a href="https://www.researchgate.net/profile/Mmr-Jahangir" target="_blank" rel="noopener noreferrer" style="color:var(--green);font-weight:600">Prof. Dr. M. M. R. Jahangir</a>, Department of Soil Science, BAU</div>
+        </div>
+      </div>
+      <div style="flex-shrink:0">
+        <a href="https://kamruzzaman17.github.io/NBCtool/" class="btn-primary" target="_blank" rel="noopener noreferrer">Open Live Tool ↗</a>
+      </div>
+    </div>
+    <figure class="nbc-figure">
+      <svg viewBox="0 0 900 300" role="img" aria-labelledby="nbcTitle">
+        <title id="nbcTitle">Nutrient balance model: inputs minus crop uptake and losses gives the balance used for the fertilizer recommendation</title>
+        <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="arrhead" d="M0 0 10 5 0 10z"/></marker></defs>
+        <text class="h" x="20" y="24">INPUTS</text>
+        <rect class="box" x="20" y="38" width="210" height="64" rx="10"/><text class="t" x="36" y="64">Mineral fertilizer</text><text class="s" x="36" y="84">N, P, K, S rates</text>
+        <rect class="box" x="20" y="116" width="210" height="64" rx="10"/><text class="t" x="36" y="142">Organic amendments</text><text class="s" x="36" y="162">Cow dung, FYM, poultry manure</text>
+        <rect class="box" x="20" y="194" width="210" height="64" rx="10"/><text class="t" x="36" y="220">Crop residue retained</text><text class="s" x="36" y="240">Release coefficients</text>
+        <path class="arr" d="M232 70 C 280 70, 280 148, 318 148" marker-end="url(#ah)"/>
+        <path class="arr" d="M232 148 L 318 148" marker-end="url(#ah)"/>
+        <path class="arr" d="M232 226 C 280 226, 280 148, 318 148" marker-end="url(#ah)"/>
+        <rect class="core" x="322" y="98" width="240" height="100" rx="12"/>
+        <text class="t" x="442" y="136" text-anchor="middle">Field nutrient balance</text>
+        <text class="s" x="442" y="158" text-anchor="middle">Inputs − (uptake + losses)</text>
+        <text class="s" x="442" y="178" text-anchor="middle">→ zero-balance fertilizer rate</text>
+        <text class="h" x="660" y="24">OUTPUTS (MODELED)</text>
+        <path class="arr" d="M564 130 C 610 130, 610 70, 652 70" marker-end="url(#ah)"/>
+        <path class="arr" d="M564 142 C 610 142, 610 128, 652 128" marker-end="url(#ah)"/>
+        <path class="arr" d="M564 156 C 610 156, 610 186, 652 186" marker-end="url(#ah)"/>
+        <path class="arr" d="M564 168 C 610 168, 610 244, 652 244" marker-end="url(#ah)"/>
+        <rect class="out" x="656" y="44" width="224" height="50" rx="10"/><text class="t" x="672" y="66">Crop uptake</text><text class="s" x="672" y="84">Grain + straw constants</text>
+        <rect class="out" x="656" y="103" width="224" height="50" rx="10"/><text class="t" x="672" y="125">Leaching</text><text class="s" x="672" y="143">Texture, rate, rainfall</text>
+        <rect class="out" x="656" y="161" width="224" height="50" rx="10"/><text class="t" x="672" y="183">NH₃ volatilization</text><text class="s" x="672" y="201">SOC, pH, mineral N, rainfall</text>
+        <rect class="out" x="656" y="219" width="224" height="50" rx="10"/><text class="t" x="672" y="241">N₂O emission</text><text class="s" x="672" y="259">Nitrate, SOC, pH, rainfall</text>
+      </svg>
+      <figcaption>Structure of the model I developed. Each loss pathway is a regression equation; uptake uses crop-specific constants. Covers N, P, K and S for potato, Boro, T. Aus and T. Aman rice, and maize, validated in three agroecological zones of Bangladesh (AEZ 7, 28 and 30).</figcaption>
+    </figure>
+  </div>
+</section>
+
+
+<!-- SOILKEY APP -->
+<section id="taxosoil">
+  <div class="section-inner fade-in">
+    <p class="section-tag">Android App</p>
+    <h2 class="section-title">Featured App: TaxoSoil</h2>
+    <p class="section-lead">An Android app that teaches soil classification by doing it. Students describe a soil one question at a time and TaxoSoil walks USDA Soil Taxonomy (Keys, 13th edition, 2022) or WRB 2022 down to family and the Bangladesh soil series — explaining every term on the way. Free download, works offline.</p>
+    <div class="exp-card" style="display:flex;flex-wrap:wrap;gap:2rem;align-items:flex-start;justify-content:space-between">
+      <div style="flex:1;min-width:260px">
+        <ul class="exp-bullets">
+          <li>All Keys to Orders, Suborders and Great Groups, plus Bangladesh-focused Keys to Subgroups, in a rule engine with three-valued logic — "don't know" answers keep every still-possible class visible</li>
+          <li>WRB 2022 Reference Soil Groups with principal and supplementary qualifiers, linked to Soil Taxonomy through correlation hints</li>
+          <li>Family level (Keys Ch. 17) and 476 Bangladesh soil series (SRDI) with old and current names; live flowchart of the key as the student answers</li>
+          <li>Pedology dictionary of about 700 terms, each with its source and a Wikipedia link for further reading</li>
+          <li>Interactive Soil Chemistry Laboratory Manual: reagent amounts for any number of samples, step-by-step procedures with timers, and calculators that show every working step</li>
+          <li>Saved pedons export as PDF, image or CSV, stamped with the student's name and ID for teachers to check</li>
+        </ul>
+        <div class="sk-tags"><span>Kotlin</span><span>Jetpack Compose</span><span>Rule engine (JSON)</span><span>Node.js test suite</span><span>Soil Taxonomy 13th ed.</span><span>WRB 2022</span></div>
+      </div>
+      <div style="flex-shrink:0;max-width:280px">
+        <div style="display:flex;flex-direction:column;gap:.6rem;margin-bottom:1rem">
+          <a class="btn-primary" href="taxosoil/TaxoSoil-1.0.apk" download style="justify-content:center">&#11015; Download APK (2.6 MB)</a>
+          <a href="taxosoil/" style="color:var(--green);font-weight:600;font-size:.9rem;text-align:center">Download page, install steps and authors &rarr;</a>
+        </div>
+        <p style="font-size:.85rem;color:var(--muted);line-height:1.6;margin:0">Prepared by Md Kamruzzaman. Validated by <a href="https://ku.ac.bd/discipline/swe/faculty/sadiq" target="_blank" rel="noopener noreferrer" style="color:var(--green)">Md Sadiqul Amin</a>, Associate Professor, Soil, Water and Environment Discipline, Khulna University. Lab manual by <a href="https://ku.ac.bd/discipline/swe/faculty/kibriaku" target="_blank" rel="noopener noreferrer" style="color:var(--green)">Dr. Khandoker Qudrata Kibria</a>, Professor, Khulna University.</p>
+        <p style="font-size:.85rem;color:var(--muted);line-height:1.6;margin:.75rem 0 0">Android 8.0 or newer.</p>
+      </div>
+    </div>
+    <div class="sk-shots">
+      <figure><img src="figures/soilkey-classify.jpg" alt="TaxoSoil result screen: Fine-silty, mixed, active, calcareous, hyperthermic Aeric Endoaquepts, with a typical Inceptisol profile photo" loading="lazy"><figcaption>Classification to family, with the reasons at every level</figcaption></figure>
+      <figure><img src="figures/soilkey-profile.jpg" alt="TaxoSoil family classes and a soil profile drawn from the student's answers" loading="lazy"><figcaption>Family classes and the student's profile, drawn live</figcaption></figure>
+      <figure><img src="taxosoil/lab.jpg" alt="TaxoSoil lab manual: organic carbon by Walkley and Black with every working step" loading="lazy"><figcaption>Lab manual calculators with the working shown</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section id="awards">
+  <div class="section-inner fade-in">
+    <p class="section-tag">Recognition &amp; Service</p>
+    <h2 class="section-title">Awards, Funding &amp; Service</h2>
+    <div class="awards-grid">
+      <div class="award-card"><div class="award-year">2025</div><h4>Stipendium Hungaricum Scholarship</h4><p>Tempus Public Foundation, Hungary — Full scholarship for MSc in Ecotoxicology at MATE, Gödöllő</p></div>
+      <div class="award-card"><div class="award-year">2023</div><h4>National Science and Technology (NST) Fellowship</h4><p>Ministry of Science and Technology, Bangladesh</p></div>
+      <div class="award-card"><div class="award-year">2022</div><h4>BAURES Research Assistantship</h4><p>Bangladesh Agricultural University Research System — Project code: BAU/139/2022</p></div>
+      <div class="award-card"><div class="award-year">2019</div><h4>Departmental Merit Scholarship</h4><p>Khulna University — Top 10 in Soil, Water &amp; Environment discipline</p></div>
+      <div class="award-card"><div class="award-year">Service</div><h4>Peer Reviewer</h4><p>Reviewed a manuscript for an international peer-reviewed journal through two full review rounds</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner fade-in">
+    <div class="contact-grid">
+      <div>
+        <p class="section-tag">Get in Touch</p>
+        <h2 class="section-title">Contact</h2>
+        <p class="section-lead">Open to PhD opportunities, research collaborations, and academic correspondence.</p>
+        <div class="contact-item"><div class="contact-icon"><svg class="ico" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div><span>Budapest, Hungary</span></div>
+        <div class="contact-item"><div class="contact-icon"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div><a href="mailto:kamruzzaman.swe@gmail.com">kamruzzaman.swe@gmail.com</a></div>
+        <div class="contact-item"><div class="contact-icon"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div><a href="mailto:kamruzzaman.md@stud.uni-mate.hu">kamruzzaman.md@stud.uni-mate.hu</a></div>
+        <div class="contact-item"><div class="contact-icon"><svg class="ico" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18h2"/></svg></div><span>+36 70 6725090</span></div>
+        <div class="contact-item"><div class="contact-icon"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div><span>Bengali (native) · English (IELTS 6.5) · Hungarian (A1)</span></div>
+      </div>
+      <div>
+        <p class="section-tag">Profiles</p>
+        <h2 class="section-title" style="font-size:1.5rem;margin-bottom:1.5rem">Find My Work</h2>
+        <div class="social-links" style="margin-top:0">
+          <a href="https://www.linkedin.com/in/md-kamruzzaman-65603a184/" class="social-btn" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="https://www.researchgate.net/profile/Md-Kamruzzaman-82" class="social-btn" target="_blank" rel="noopener noreferrer">ResearchGate ↗</a>
+          <a href="https://scholar.google.com/citations?user=rb326vAAAAAJ" class="social-btn" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
+          <a href="https://orcid.org/0000-0002-5398-5371" class="social-btn" target="_blank" rel="noopener noreferrer">ORCID ↗</a>
+          <a href="https://kamruzzaman17.github.io/kamruzzaman/" class="social-btn" target="_blank" rel="noopener noreferrer">Portfolio ↗</a>
+          <a href="https://kamruzzaman17.github.io/NBCtool/" class="social-btn" target="_blank" rel="noopener noreferrer">NBC Tool ↗</a>
+        </div>
+        <p style="color:#B8A089;font-size:.85rem;margin-top:1.5rem">References available on request.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Md Kamruzzaman · Soil Scientist · Budapest, Hungary
+  <div style="margin-top:.5rem;font-size:.72rem;color:#8A7765;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;align-items:center">
+    <span id="lastUpdated">Last updated: —</span>
+    <img src="https://hits.sh/kamruzzaman17.github.io/kamruzzaman.svg?style=flat-square&label=visits&color=1a7a4a&labelColor=0f1a14" alt="" aria-hidden="true" width="1" height="1" style="position:absolute;width:1px;height:1px;opacity:0;pointer-events:none">
+  </div>
+</footer>
+
+<script>
+/* Dark mode toggle — persists via localStorage */
+const themeToggle = document.getElementById('themeToggle');
+const htmlEl = document.documentElement;
+const MOON = '<svg class="ico" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>';
+const SUN = '<svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
+
+function applyTheme(isDark) {
+  htmlEl.classList.toggle('dark-mode', isDark);
+  themeToggle.innerHTML = isDark ? SUN : MOON;
+}
+const savedTheme = localStorage.getItem('kamruzzaman-theme');
+const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+applyTheme(savedTheme ? savedTheme === 'dark' : prefersDark);
+
+themeToggle.addEventListener('click', () => {
+  const isDark = !htmlEl.classList.contains('dark-mode');
+  applyTheme(isDark);
+  localStorage.setItem('kamruzzaman-theme', isDark ? 'dark' : 'light');
+});
+
+/* Last updated — pulled automatically from the file's own last-modified date */
+document.getElementById('lastUpdated').textContent =
+  'Last updated: ' + new Date(document.lastModified).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+
+function showPubs(type, btn) {
+  ['review','journals','chapters'].forEach(id => {
+    document.getElementById(id).classList.toggle('hidden', id !== type);
+  });
+  document.querySelectorAll('.pub-tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+}
+
+function toggleFigs(btn){
+  const panel=document.getElementById(btn.getAttribute('aria-controls'));
+  const open=panel.classList.toggle('hidden')===false;
+  btn.setAttribute('aria-expanded',open);
+  btn.textContent=open?'Hide figures':'Show figures';
+}
+
+function copyCitation(btn, text) {
+  const finish = () => {
+    btn.textContent = 'Copied';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = 'Copy citation'; btn.classList.remove('copied'); }, 2000);
+  };
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(text).then(finish).catch(() => fallbackCopy(text, finish));
+  } else { fallbackCopy(text, finish); }
+}
+function fallbackCopy(text, cb) {
+  const ta = document.createElement('textarea');
+  ta.value = text; ta.style.cssText = 'position:fixed;opacity:0;top:0;left:0';
+  document.body.appendChild(ta); ta.focus(); ta.select();
+  try { document.execCommand('copy'); } catch(e) {}
+  document.body.removeChild(ta); cb();
+}
+
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+hamburger.addEventListener('click', () => {
+  const open = hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open', open);
+  hamburger.setAttribute('aria-expanded', open);
+});
+document.querySelectorAll('.mobile-nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+    hamburger.setAttribute('aria-expanded','false');
+  });
+});
+document.addEventListener('click', e => {
+  if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+    hamburger.setAttribute('aria-expanded','false');
+  }
+});
+
+/* Soil-horizon rail: highlight the horizon you are "digging" through */
+const HZ = {hero:'O',about:'O',experience:'A',publications:'A',skills:'B',nbctool:'B',taxosoil:'B',awards:'C',contact:'C'};
+const railLinks = document.querySelectorAll('.horizon-rail a');
+function updateRail(){
+  let cur='O';
+  for (const id in HZ){ const el=document.getElementById(id); if(el && el.getBoundingClientRect().top < window.innerHeight*0.4) cur=HZ[id]; }
+  railLinks.forEach(a=>a.classList.toggle('on', a.dataset.hz===cur));
+}
+window.addEventListener('scroll', updateRail, {passive:true}); updateRail();
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
