@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Benjamin Macartan | Research, Agriculture &amp; Cybersecurity</title>
+  <meta name="description" content="Benjamin Macartan, Postdoctoral Researcher at Teagasc. Sustainable agriculture, biochar, soil carbon, emissions mitigation and a growing practice in cybersecurity.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Benjamin Macartan | Research, Agriculture &amp; Cybersecurity">
+  <meta property="og:description" content="Researching sustainable agricultural systems. Building skills to help secure their digital future.">
+  <!-- Add og:url and a canonical URL after you know your GitHub Pages address. -->
+  <meta name="theme-color" content="#183d32">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23183d32'/%3E%3Ctext x='32' y='42' text-anchor='middle' fill='%23fff' font-family='Georgia' font-size='28'%3EBM%3C/text%3E%3C/svg%3E">
+  <script>
+    // Apply a saved preference before paint. The site also works without JavaScript.
+    try {
+      const savedTheme = localStorage.getItem('bm-theme');
+      if (savedTheme === 'dark' || savedTheme === 'light') document.documentElement.dataset.theme = savedTheme;
+    } catch (_) {}
+  </script>
+  <style>
+    :root { --bg:#f7f7f1; --surface:#ffffff; --soft:#edf0e7; --ink:#1c302a; --muted:#53635b; --line:#d6ddd2; --green:#205b45; --green-soft:#dfe9dc; --gold:#b78638; --hero:#16392f; --hero-text:#ffffff; --serif:Georgia,'Times New Roman',serif; --sans:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; }
+    @media(prefers-color-scheme:dark) { :root:not([data-theme="light"]) { --bg:#14211b; --surface:#1b2b23; --soft:#22352a; --ink:#f0f3e8; --muted:#b7c6b9; --line:#3b5141; --green:#b6d6a9; --green-soft:#2b4432; --gold:#e0b263; --hero:#10291f; } }
+    :root[data-theme="dark"] { --bg:#14211b; --surface:#1b2b23; --soft:#22352a; --ink:#f0f3e8; --muted:#b7c6b9; --line:#3b5141; --green:#b6d6a9; --green-soft:#2b4432; --gold:#e0b263; --hero:#10291f; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:100px; }
+    body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.75 var(--sans); }
+    a { color:var(--green); text-underline-offset:4px; }
+    a:hover { text-decoration-thickness:2px; }
+    button { font:inherit; cursor:pointer; }
+    button,a { -webkit-tap-highlight-color:transparent; }
+    :focus-visible { outline:3px solid var(--gold); outline-offset:5px; }
+    ::selection { background:#ccdbb3; color:#142a20; }
+    h1,h2,h3,p { margin:0; }
+    h1,h2 { font-family:var(--serif); font-weight:400; }
+    h2 { font-size:clamp(2rem,4vw,3.1rem); line-height:1.15; letter-spacing:-.04em; }
+    h3 { font-size:1.15rem; line-height:1.45; letter-spacing:-.02em; }
+    [hidden] { display:none !important; }
+    .wrap { width:min(1160px,calc(100% - 80px)); margin-inline:auto; }
+    .skip { position:fixed; z-index:100; top:-100px; left:15px; background:var(--surface); padding:10px 18px; }
+    .skip:focus { top:12px; }
+    .header { position:sticky; top:0; z-index:20; background:var(--bg); border-bottom:1px solid var(--line); }
+    .nav { min-height:82px; display:flex; align-items:center; gap:30px; }
+    .brand { display:flex; align-items:center; gap:12px; margin-right:auto; color:var(--ink); text-decoration:none; font-size:.91rem; font-weight:650; line-height:1.3; }
+    .brand-mark { display:grid; place-items:center; width:40px; height:40px; color:#fff; background:#183d32; border-radius:50%; font:17px var(--serif); }
+    .nav-links { display:flex; gap:24px; align-items:center; }
+    .nav-links a { font-size:.8rem; color:var(--muted); text-decoration:none; }
+    .nav-links a:hover,.nav-links a[aria-current] { color:var(--green); text-decoration:underline; }
+    .icon-button { display:grid; place-items:center; width:40px; height:40px; border:1px solid var(--line); border-radius:50%; background:var(--surface); color:var(--ink); flex-shrink:0; }
+    .icon-button svg { width:18px; height:18px; }
+    .menu-button { display:none; border-radius:8px; width:auto; padding-inline:12px; font-size:.8rem; }
+    .hero { background:var(--hero); color:var(--hero-text); padding:76px 0 56px; position:relative; overflow:hidden; }
+    .hero::after { content:''; position:absolute; width:600px; height:600px; right:-250px; top:-300px; border:1px solid #ffffff12; border-radius:50%; pointer-events:none; }
+    .hero-grid { display:grid; grid-template-columns:1.3fr 1fr; gap:70px; align-items:center; }
+    .eyebrow { font-size:.69rem; font-weight:650; text-transform:uppercase; letter-spacing:.17em; color:var(--green); }
+    .hero .eyebrow { color:#c8d8b5; display:flex; align-items:center; gap:10px; }
+    .hero .eyebrow::before { content:''; width:7px; height:7px; background:#bed096; border-radius:50%; }
+    h1 { margin-top:24px; font-size:clamp(3.1rem,6.8vw,5.6rem); line-height:.99; letter-spacing:-.055em; }
+    .hero-role { margin-top:24px; font-size:1.03rem; color:#e1e8d9; }
+    .hero-description { margin-top:16px; max-width:490px; color:#c1d0c4; font-size:.95rem; line-height:1.9; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
+    .button { display:inline-flex; align-items:center; justify-content:center; gap:22px; padding:12px 20px; border:1px solid transparent; border-radius:4px; text-decoration:none; font-size:.82rem; font-weight:650; transition:transform .2s,background .2s; }
+    .button:hover { transform:translateY(-2px); }
+    .button-primary { background:#d6e1b8; color:#182c21; }
+    .button-secondary { border-color:#6d8b7b; color:#f0f2e8; }
+    .button-secondary:hover { background:#ffffff0a; }
+    .hero-art { position:relative; border:1px solid #6f88715e; border-radius:150px 150px 8px 8px; background:#234a3b; padding:28px 26px 0; isolation:isolate; }
+    .art-top { text-align:center; padding-top:10px; }
+    .monogram { font:clamp(4rem,8vw,6.8rem)/1.3 var(--serif); color:#d4dfb6; letter-spacing:-.06em; }
+    .art-caption { color:#d9e4d3; font-size:.65rem; text-transform:uppercase; letter-spacing:.18em; }
+    .field-art { width:100%; height:auto; display:block; margin-top:10px; }
+    .art-foot { border-top:1px solid #6f88715e; padding:16px 0; display:flex; justify-content:space-between; align-items:center; color:#d1ddce; font-size:.64rem; letter-spacing:.08em; text-transform:uppercase; }
+    .art-foot span:last-child { color:#e3c48b; }
+    .hero-bottom { border-top:1px solid #ffffff24; margin-top:52px; padding-top:24px; display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; color:#c1d0c4; font-size:.73rem; }
+    .hero-bottom strong { color:#f0f1df; font-weight:500; }
+    .section { padding:88px 0; }
+    .section-white { background:var(--surface); }
+    .section-heading { display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:end; margin-bottom:40px; }
+    .section-heading h2 { margin-top:12px; }
+    .section-heading>p { color:var(--muted); max-width:480px; font-size:.93rem; }
+    .about-grid { display:grid; grid-template-columns:1.5fr 1fr; gap:80px; }
+    .about-copy p { color:var(--muted); margin-bottom:20px; font-size:.98rem; }
+    .about-copy strong { font-weight:600; color:var(--ink); }
+    .profile-note { margin-top:28px; padding-left:20px; border-left:3px solid var(--gold); font:1.4rem/1.5 var(--serif); max-width:570px; }
+    .profile-facts { margin:0; border-top:1px solid var(--line); }
+    .profile-facts>div { display:grid; grid-template-columns:100px 1fr; gap:15px; padding:16px 0; border-bottom:1px solid var(--line); }
+    dt { font-size:.7rem; font-weight:650; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); }
+    dd { margin:0; font-size:.84rem; }
+    .research-grid { display:grid; grid-template-columns:repeat(3,1fr); border:1px solid var(--line); }
+    .research-card { padding:32px; }
+    .research-card+.research-card { border-left:1px solid var(--line); }
+    .number { display:block; color:var(--green); font:italic 1.4rem var(--serif); margin-bottom:26px; }
+    .research-card p { font-size:.85rem; color:var(--muted); margin-top:14px; }
+    .tags { display:flex; flex-wrap:wrap; gap:7px; margin-top:22px; }
+    .tag { padding:4px 9px; border:1px solid var(--line); color:var(--muted); border-radius:3px; font-size:.66rem; line-height:1.5; }
+    .project-toolbar { display:flex; flex-wrap:wrap; align-items:center; gap:9px; margin-bottom:25px; }
+    .filter { border:1px solid var(--line); background:transparent; color:var(--muted); padding:8px 16px; border-radius:100px; font-size:.76rem; }
+    .filter[aria-pressed="true"] { background:var(--green); color:var(--bg); border-color:var(--green); }
+    .project-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+    .project { padding:30px; background:var(--surface); border:1px solid var(--line); border-radius:6px; }
+    .project-meta { color:var(--green); font-size:.65rem; font-weight:650; text-transform:uppercase; letter-spacing:.1em; margin-bottom:18px; }
+    .project h3 { max-width:440px; }
+    .project>p { color:var(--muted); font-size:.86rem; margin-top:13px; }
+    .project details { margin-top:20px; padding-top:15px; border-top:1px solid var(--line); font-size:.81rem; }
+    .project summary { cursor:pointer; color:var(--green); font-weight:550; }
+    .project details p { padding-top:12px; color:var(--muted); }
+    .project a { display:inline-block; margin-top:18px; font-size:.81rem; }
+    .status { min-height:24px; font-size:.75rem; color:var(--muted); margin:16px 0 0; }
+    .experience-row { display:grid; grid-template-columns:210px 1fr; gap:50px; padding:30px 0; border-top:1px solid var(--line); }
+    .experience-row:last-child { border-bottom:1px solid var(--line); }
+    .experience-date { font-size:.78rem; color:var(--muted); }
+    .experience-label { display:block; margin-top:8px; font-size:.66rem; letter-spacing:.08em; text-transform:uppercase; color:var(--green); }
+    .experience-org { font-size:.85rem; color:var(--green); margin-top:4px; }
+    .experience-row ul { margin:16px 0 0; padding-left:18px; font-size:.86rem; color:var(--muted); }
+    .experience-row li { padding-left:4px; margin-bottom:6px; }
+    .skills-grid { display:grid; grid-template-columns:1fr 1fr; gap:45px; }
+    .skill-group { padding-top:23px; border-top:1px solid var(--line); }
+    .skill-group p { font-size:.86rem; color:var(--muted); margin-top:12px; }
+    .certifications { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-top:40px; }
+    .certificate { padding:21px 18px; background:var(--soft); border:1px solid var(--line); border-radius:4px; }
+    .certificate span { display:block; font-size:.65rem; color:var(--muted); margin-bottom:7px; }
+    .certificate strong { display:block; font-size:.85rem; font-weight:600; line-height:1.5; }
+    .bridge { background:var(--green-soft); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+    .bridge-inner { display:grid; grid-template-columns:1fr 1fr; gap:70px; padding:52px 0; align-items:center; }
+    .bridge h2 { font-size:clamp(1.9rem,3vw,2.6rem); }
+    .bridge p { font-size:.9rem; color:var(--muted); }
+    .contact { background:var(--hero); color:#fff; padding:78px 0; }
+    .contact-grid { display:grid; grid-template-columns:1.4fr 1fr; gap:70px; align-items:center; }
+    .contact .eyebrow { color:#d5dfb9; margin-bottom:14px; }
+    .contact h2 { max-width:600px; }
+    .contact p { color:#c1d0c4; font-size:.9rem; margin-top:18px; max-width:550px; }
+    .contact-links { display:flex; flex-direction:column; align-items:start; gap:15px; }
+    .contact-links small { color:#c1d0c4; font-size:.74rem; }
+    footer { border-top:1px solid var(--line); padding:24px 0; }
+    .footer-inner { display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; color:var(--muted); font-size:.7rem; }
+    .footer-inner a { color:var(--muted); }
+    @media(min-width:1500px) { .hero { padding-top:96px; padding-bottom:65px; } }
+    @media(max-width:1000px) { .nav-links { gap:15px; } .nav { gap:16px; } .brand-name { max-width:100px; } .hero-grid { gap:35px; } .about-grid { gap:40px; } .research-card { padding:24px; } }
+    @media(max-width:760px) {
+      .wrap { width:calc(100% - 40px); } .nav { min-height:72px; flex-wrap:wrap; gap:12px; } .brand-name { max-width:none; font-size:.85rem; }
+      .nav-links { flex:1 0 100%; flex-wrap:wrap; gap:12px 22px; padding:0 0 18px; } .nav-links a { font-size:.85rem; }
+      .js .menu-button { display:grid; } .js .nav-links { display:none; } .js .nav-links.is-open { display:flex; }
+      .hero { padding:48px 0 30px; } .hero-grid { grid-template-columns:1fr; gap:40px; } h1 { font-size:clamp(3.4rem,12vw,5rem); }
+      .hero-art { width:min(340px,100%); justify-self:center; } .monogram { font-size:5rem; } .field-art { max-height:190px; } .art-top { padding-top:0; }
+      .hero-bottom { margin-top:36px; font-size:.69rem; } .section { padding:58px 0; }
+      .section-heading,.about-grid,.skills-grid,.bridge-inner,.contact-grid { grid-template-columns:1fr; gap:26px; }
+      .section-heading { margin-bottom:30px; } .research-grid { grid-template-columns:1fr; } .research-card+.research-card { border-left:0; border-top:1px solid var(--line); }
+      .research-card { padding:26px; } .number { margin-bottom:14px; } .project-grid { grid-template-columns:1fr; } .project { padding:25px; }
+      .experience-row { grid-template-columns:1fr; gap:13px; padding:25px 0; } .experience-label { display:inline; margin-left:12px; }
+      .certifications { grid-template-columns:1fr 1fr; gap:10px; margin-top:28px; } .bridge-inner { padding:42px 0; } .contact { padding:58px 0; }
+    }
+    @media(max-width:370px) { .brand-name { max-width:95px; } .nav { gap:8px; } .certifications { grid-template-columns:1fr; } .wrap { width:calc(100% - 32px); } }
+    @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { transition:none!important; animation:none!important; } }
+    @media print {
+      :root { --bg:#fff; --surface:#fff; --soft:#fff; --ink:#111; --muted:#333; --line:#ccc; --green:#163d30; --green-soft:#fff; }
+      .header,.hero-art,.actions,.project-toolbar,.status,.contact-links,.skip { display:none!important; }
+      .hero,.contact { background:#fff; color:#111; padding:25px 0; } .hero *, .contact * { color:#111!important; } .hero-grid,.contact-grid { display:block; }
+      .hero-bottom { border-color:#ccc; margin-top:20px; } .wrap { width:100%; } .section { padding:28px 0; } .hero h1 { font-size:42px; }
+      .project[hidden] { display:block!important; } .project,.research-card,.experience-row { break-inside:avoid; } .project-grid { gap:12px; }
+      a { color:#111; } .bridge-inner { padding:25px 0; } footer a { display:none; }
+    }
+  </style>
+</head>
+<body id="top">
+  <!--
+    BENJAMIN MACARTAN | Single-file GitHub Pages portfolio
+    No build tools, trackers, external fonts or libraries required.
+    Edit the text directly. Update LinkedIn in the two places below if needed.
+    Add your verified publication citations, DOI links, email, GitHub profile,
+    and a CV link when ready. They are intentionally omitted until supplied.
+    To add a portrait, replace .art-top with an img and include the image file
+    in your repository, using a relative path such as ./profile.jpg.
+    Add your final URL to the metadata above after publishing.
+  -->
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header">
+    <nav class="wrap nav" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Benjamin Macartan, home"><span class="brand-mark" aria-hidden="true">BM</span><span class="brand-name">Benjamin Macartan</span></a>
+      <button class="menu-button icon-button" id="menu-toggle" aria-expanded="false" aria-controls="nav-links" hidden>Menu</button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a><a href="#research">Research</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+      </div>
+      <button class="icon-button" id="theme-toggle" aria-label="Switch colour theme" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20.2 14A8.5 8.5 0 0 1 10 3.8 8.5 8.5 0 1 0 20.2 14Z"/></svg>
+      </button>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div>
+            <p class="eyebrow">Researcher · Problem solver · Lifelong learner</p>
+            <h1 id="hero-title">Benjamin<br>Macartan<span style="color:#d6e1b8">.</span></h1>
+            <p class="hero-role">Postdoctoral Researcher at Teagasc, Ireland</p>
+            <p class="hero-description">Advancing sustainable agriculture through research in biochar, soil carbon and emissions mitigation. Building a complementary practice in cybersecurity.</p>
+            <div class="actions"><a class="button button-primary" href="#research">Explore my research <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="#contact">Let us connect <span aria-hidden="true">↗</span></a></div>
+          </div>
+          <div class="hero-art" aria-label="Personal monogram with an illustration of agricultural fields">
+            <div class="art-top"><div class="monogram" aria-hidden="true">BM</div><p class="art-caption">Curiosity. Evidence. Impact.</p></div>
+            <svg class="field-art" viewBox="0 0 360 230" fill="none" aria-hidden="true">
+              <circle cx="280" cy="51" r="24" fill="#d6e1b8" fill-opacity=".85"/>
+              <path d="M0 141C66 97 114 104 178 131S294 153 360 109" stroke="#aebf92" stroke-width="1.2"/>
+              <path d="M0 162C78 111 124 126 185 148S287 168 360 130M0 184C75 138 127 143 191 165S299 185 360 150M0 206C81 159 129 163 201 187S300 203 360 173M21 230C100 182 145 192 211 209S305 224 360 195M98 230C150 209 186 219 223 230" stroke="#aebf92" stroke-opacity=".65" stroke-width="1"/>
+              <path d="M95 125V48M95 75C73 75 67 63 67 52 86 51 95 62 95 75ZM95 94C116 94 124 80 124 68 105 69 95 79 95 94ZM95 54C82 43 84 29 95 17 108 31 108 43 95 54Z" stroke="#d9e5c6" stroke-width="1.8" stroke-linejoin="round"/>
+              <path d="M141 121V80M141 96C127 96 121 88 121 79 135 79 141 87 141 96ZM141 109C156 109 162 101 162 92 148 92 141 99 141 109Z" stroke="#d9e5c6" stroke-width="1.4"/>
+              <path d="M211 91H233L246 77H269" stroke="#aebf92" stroke-width="1"/><circle cx="211" cy="91" r="3" fill="#d6e1b8"/><circle cx="269" cy="77" r="3" stroke="#d6e1b8"/>
+            </svg>
+            <div class="art-foot"><span>From soil to systems</span><span>Ireland ↗</span></div>
+          </div>
+        </div>
+        <div class="hero-bottom"><span><strong>PhD</strong> · Biosystems &amp; Food Engineering</span><span><strong>Focus</strong> · Sustainable agriculture &amp; environmental research</span><span><strong>Exploring</strong> · Agriculture × cybersecurity</span></div>
+      </div>
+    </section>
+
+    <section class="section section-white" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">01 / About</p><h2 id="about-title">A researcher at heart.<br>A builder by curiosity.</h2></div><p>I work across field experiments, laboratory measurements and data analysis to understand agricultural systems and improve their environmental performance.</p></div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>I am a <strong>Postdoctoral Researcher at Teagasc Johnstown Castle</strong>, working on biochar in agriculture. My current research connects perennial biomass, manure management and soil application to investigate carbon storage, nutrient recycling and emissions mitigation.</p>
+            <p>I hold a <strong>PhD in Biosystems &amp; Food Engineering from University College Dublin</strong>, completed through a Teagasc Walsh Fellowship. My doctoral research examined ammonia and methane emissions from dairy housing and stored manure, alongside the validation of low-cost gas sensors.</p>
+            <p>Alongside my research, I am developing practical cybersecurity skills through certification, independent projects and hands-on learning. I am particularly interested in how environmental research and cybersecurity can contribute to more resilient agricultural systems.</p>
+            <div class="profile-note">Understanding how systems work, measuring what matters, and turning evidence into practical improvements.</div>
+          </div>
+          <dl class="profile-facts"><div><dt>Current role</dt><dd>Postdoctoral Researcher<br>Teagasc Johnstown Castle</dd></div><div><dt>Education</dt><dd>PhD, Biosystems &amp; Food Engineering<br>University College Dublin</dd></div><div><dt>Based in</dt><dd>Ireland</dd></div><div><dt>Research</dt><dd>Biochar · Soil carbon · Agricultural emissions · Sensor validation</dd></div><div><dt>Developing</dt><dd>Cyber threat intelligence · Cloud security · Security operations</dd></div></dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="research" aria-labelledby="research-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">02 / Research focus</p><h2 id="research-title">Better evidence.<br>More sustainable systems.</h2></div><p>Connecting the carbon and nutrient cycle from biomass production and manure storage to soil health and agricultural management.</p></div>
+        <div class="research-grid">
+          <article class="research-card"><span class="number">01</span><h3>Biochar &amp; soil carbon</h3><p>Investigating biochar from perennial biomass and its potential to support carbon sequestration, soil physical properties and nutrient recycling.</p><div class="tags"><span class="tag">Miscanthus &amp; willow</span><span class="tag">Soil health</span><span class="tag">Carbon storage</span></div></article>
+          <article class="research-card"><span class="number">02</span><h3>Agricultural emissions</h3><p>Evaluating strategies to mitigate ammonia and methane emissions from dairy housing and manure storage, including the effects of treatments and management.</p><div class="tags"><span class="tag">NH₃ &amp; CH₄</span><span class="tag">Manure management</span><span class="tag">Mitigation</span></div></article>
+          <article class="research-card"><span class="number">03</span><h3>Measurement &amp; analysis</h3><p>Combining field and laboratory measurements with sensor validation, meta-analysis and reproducible R workflows to generate dependable evidence.</p><div class="tags"><span class="tag">Gas sensors</span><span class="tag">Meta-analysis</span><span class="tag">R programming</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title" style="padding-top:0">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">03 / Selected work</p><h2 id="projects-title">Questions into practice.</h2></div><p>A selection of research themes and independent technical projects. Explore the methods and motivation behind each.</p></div>
+        <div class="project-toolbar" id="project-filters" role="group" aria-label="Filter projects" hidden><button class="filter" data-filter="all" aria-pressed="true">All work</button><button class="filter" data-filter="research" aria-pressed="false">Research</button><button class="filter" data-filter="cyber" aria-pressed="false">Cybersecurity</button></div>
+        <div class="project-grid">
+          <article class="project" data-category="research"><div class="project-meta">Research / Biochar</div><h3>From perennial biomass to soil</h3><p>Evaluating an integrated biochar system for carbon sequestration, nutrient recycling and emission mitigation.</p><div class="tags"><span class="tag">Biochar</span><span class="tag">Slurry storage</span><span class="tag">Soil application</span></div><details><summary>Explore the research</summary><p>The research connects Miscanthus and willow biomass, biochar production, slurry storage experiments and soil application studies. Measurements examine emissions, soil properties, crop performance and nutrient losses.</p></details></article>
+          <article class="project" data-category="research"><div class="project-meta">Doctoral research / Measurement</div><h3>Gas sensor validation in dairy housing</h3><p>Assessing low-cost sensors against reference measurements in naturally ventilated dairy buildings.</p><div class="tags"><span class="tag">Gasera ONE</span><span class="tag">Sensor networks</span><span class="tag">CO₂ · NH₃ · CH₄</span></div><details><summary>Explore the methods</summary><p>Compared a low-cost wireless sensor network with a reference gas analyser under real barn conditions, examining gas concentration agreement and the challenges of measuring emissions in naturally ventilated housing.</p></details></article>
+          <article class="project" data-category="research"><div class="project-meta">Doctoral research / Evidence synthesis</div><h3>Diet and emissions from stored cattle manure</h3><p>Examining how forage-to-concentrate ratio, crude protein and feed additives influence emissions during manure storage.</p><div class="tags"><span class="tag">Systematic review</span><span class="tag">Meta-analysis</span><span class="tag">metafor</span></div><details><summary>Explore the analysis</summary><p>Synthesised experimental evidence using meta-analysis in R to evaluate treatment effects, between-study heterogeneity and the influence of dietary moderators on manure emissions.</p></details></article>
+          <article class="project" data-category="research"><div class="project-meta">Research tools / R</div><h3>Reproducible environmental data workflows</h3><p>Developing reusable R functions for gas concentration conversion, chamber flux calculations, statistical analysis and weather data preparation.</p><div class="tags"><span class="tag">R</span><span class="tag">Chamber fluxes</span><span class="tag">Data quality</span></div><details><summary>Explore the approach</summary><p>Focuses on transparent calculations, explicit units and reusable functions for environmental datasets. Statistical workflows support treatment comparisons and assumption checks, alongside preparation of monitoring and weather data.</p></details></article>
+          <article class="project" data-category="cyber"><div class="project-meta">Independent project / Threat intelligence</div><h3>OpenCTI deployment on AWS</h3><p>Deploying a cyber threat intelligence platform with Docker and connecting an external threat intelligence feed.</p><div class="tags"><span class="tag">OpenCTI</span><span class="tag">AWS</span><span class="tag">Docker</span></div><details><summary>Explore the build</summary><p>Deployed Filigran OpenCTI on AWS using Docker and configured an AlienVault / LevelBlue connector. The project provided practical experience with platform configuration, container deployment and threat intelligence ingestion.</p></details></article>
+          <article class="project" data-category="cyber"><div class="project-meta">Independent learning / Home laboratory</div><h3>A practical cybersecurity learning environment</h3><p>Building hands-on familiarity with Linux and virtual environments to complement formal security and networking study.</p><div class="tags"><span class="tag">Ubuntu</span><span class="tag">Virtual machines</span><span class="tag">Security fundamentals</span></div><details><summary>Explore the learning</summary><p>An Ubuntu virtual machine homelab supports practical learning in system configuration and Linux administration, alongside a developing interest in security operations and cyber threat intelligence.</p></details></article>
+        </div>
+        <p class="status" id="filter-status" role="status" aria-live="polite" hidden></p>
+        <!-- Add a Publications section here when verified citations and DOI links are ready.
+             Keep submitted manuscripts distinct from accepted or published articles. -->
+      </div>
+    </section>
+
+    <section class="section section-white" id="experience" aria-labelledby="experience-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">04 / Experience &amp; education</p><h2 id="experience-title">A foundation in research.</h2></div><p>Experience across experimental design, environmental measurement, quantitative analysis and scientific communication.</p></div>
+        <article class="experience-row"><div class="experience-date">Current<span class="experience-label">Research appointment</span></div><div><h3>Postdoctoral Researcher</h3><p class="experience-org">Teagasc Johnstown Castle, Ireland</p><ul><li>Investigating biochar applications in agriculture, with a focus on soil properties, carbon storage and nutrient recycling.</li><li>Connecting perennial biomass production, slurry management and land application within an integrated research programme.</li><li>Designing and conducting field and laboratory studies, processing samples and analysing environmental data.</li></ul></div></article>
+        <article class="experience-row"><div class="experience-date">2022–2026<span class="experience-label">Doctoral research</span></div><div><h3>PhD in Biosystems &amp; Food Engineering</h3><p class="experience-org">University College Dublin &amp; Teagasc · Walsh Fellowship</p><ul><li>Investigated mitigation of ammonia and methane emissions from dairy housing and stored cattle manure.</li><li>Evaluated low-cost gas sensors in naturally ventilated dairy housing against reference instrumentation.</li><li>Combined controlled experiments, large-scale manure storage studies and a systematic review with meta-analysis.</li><li>Communicated research through manuscripts, presentations and collaboration with research teams.</li></ul></div></article>
+      </div>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">05 / Skills &amp; credentials</p><h2 id="skills-title">From fieldwork to code.</h2></div><p>Established research capabilities, supported by a growing technical foundation in cybersecurity and cloud computing.</p></div>
+        <div class="skills-grid">
+          <div class="skill-group"><h3>Experimental research</h3><p>Experimental design, soil and slurry sampling, dynamic and static chambers, gas monitoring, emission calculations and reference measurement comparisons.</p><div class="tags"><span class="tag">Gasera ONE</span><span class="tag">INNOVA 1412i</span><span class="tag">Gas chromatography</span><span class="tag">Acid traps</span></div></div>
+          <div class="skill-group"><h3>Data analysis &amp; research computing</h3><p>R programming, meta-analysis, treatment comparisons, mixed models, parallel processing and reproducible data preparation and reporting.</p><div class="tags"><span class="tag">metafor</span><span class="tag">lme4</span><span class="tag">tidyverse</span><span class="tag">SLURM / HPC</span></div></div>
+          <div class="skill-group"><h3>Cybersecurity &amp; cloud foundations</h3><p>Networking and security fundamentals, cyber threat intelligence platform deployment, Linux virtual environments and container-based applications.</p><div class="tags"><span class="tag">OpenCTI</span><span class="tag">Docker</span><span class="tag">AWS</span><span class="tag">Ubuntu</span></div></div>
+          <div class="skill-group"><h3>Communication &amp; collaboration</h3><p>Scientific writing, conference presentations, project coordination, teaching and communicating technical findings to different audiences.</p><div class="tags"><span class="tag">Research communication</span><span class="tag">Teamwork</span><span class="tag">Project management</span></div></div>
+        </div>
+        <div class="certifications" aria-label="Certifications earned"><div class="certificate"><span>ISC2</span><strong>Certified in Cybersecurity</strong></div><div class="certificate"><span>CompTIA</span><strong>Network+</strong></div><div class="certificate"><span>CompTIA</span><strong>Security+</strong></div><div class="certificate"><span>Microsoft</span><strong>Azure Fundamentals<br>AZ-900</strong></div></div>
+      </div>
+    </section>
+
+    <aside class="bridge" aria-labelledby="bridge-title"><div class="wrap bridge-inner"><h2 id="bridge-title">Agriculture meets<br>digital resilience.</h2><p>As agriculture becomes more connected, I am interested in the security of the data, sensors and digital systems that support it. My aim is to bring research discipline and a growing cybersecurity skill set to this intersection.</p></div></aside>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title"><div class="wrap contact-grid"><div><p class="eyebrow">06 / Get in touch</p><h2 id="contact-title">Good work begins<br>with a conversation.</h2><p>I welcome conversations about research collaboration, sustainable agriculture, biochar and opportunities to gain practical cybersecurity experience.</p></div><div class="contact-links"><a class="button button-primary" href="https://www.linkedin.com/in/benjaminmacartan/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a><small>Based in Ireland · Open to learning and collaboration</small><!-- Add a verified email address, GitHub profile and CV link here. --></div></div></section>
+  </main>
+  <footer><div class="wrap footer-inner"><span>© <span id="year">2026</span> Benjamin Macartan</span><span>Research with purpose. Learning with curiosity.</span><a href="#top">Back to top ↑</a></div></footer>
+  <script>
+    (() => {
+      'use strict';
+      document.documentElement.classList.add('js');
+      document.getElementById('year').textContent = new Date().getFullYear();
+      const menu = document.getElementById('menu-toggle');
+      const nav = document.getElementById('nav-links');
+      menu.hidden = false;
+      function closeMenu() { nav.classList.remove('is-open'); menu.setAttribute('aria-expanded', 'false'); }
+      menu.addEventListener('click', () => {
+        const expanded = menu.getAttribute('aria-expanded') !== 'true';
+        nav.classList.toggle('is-open', expanded);
+        menu.setAttribute('aria-expanded', String(expanded));
+      });
+      nav.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
+      document.addEventListener('keydown', event => { if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') { closeMenu(); menu.focus(); } });
+      const narrowScreen = matchMedia('(max-width:760px)');
+      if (narrowScreen.addEventListener) narrowScreen.addEventListener('change', closeMenu);
+      const themeButton = document.getElementById('theme-toggle');
+      themeButton.hidden = false;
+      const darkPreference = matchMedia('(prefers-color-scheme:dark)');
+      function isDark() { return document.documentElement.dataset.theme ? document.documentElement.dataset.theme === 'dark' : darkPreference.matches; }
+      function labelTheme() { themeButton.setAttribute('aria-label', 'Switch to ' + (isDark() ? 'light' : 'dark') + ' theme'); }
+      labelTheme();
+      if (darkPreference.addEventListener) darkPreference.addEventListener('change', labelTheme);
+      themeButton.addEventListener('click', () => {
+        const next = isDark() ? 'light' : 'dark';
+        document.documentElement.dataset.theme = next;
+        try { localStorage.setItem('bm-theme', next); } catch (_) {}
+        labelTheme();
+      });
+      const filters = document.getElementById('project-filters');
+      const projects = [...document.querySelectorAll('.project')];
+      const status = document.getElementById('filter-status');
+      filters.hidden = false;
+      status.hidden = false;
+      filters.addEventListener('click', event => {
+        const button = event.target.closest('[data-filter]');
+        if (!button) return;
+        filters.querySelectorAll('button').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+        projects.forEach(project => { project.hidden = button.dataset.filter !== 'all' && project.dataset.category !== button.dataset.filter; });
+        const count = projects.filter(project => !project.hidden).length;
+        status.textContent = 'Showing ' + count + ' ' + (button.dataset.filter === 'all' ? '' : button.textContent.toLowerCase() + ' ') + 'projects.';
+      });
+      if ('IntersectionObserver' in window) {
+        const links = [...nav.querySelectorAll('a')];
+        const visible = new Set();
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => { if(entry.isIntersecting) visible.add(entry.target.id); else visible.delete(entry.target.id); });
+          const active = links.find(link => visible.has(link.hash.slice(1)));
+          links.forEach(link => { if (link === active) link.setAttribute('aria-current', 'location'); else link.removeAttribute('aria-current'); });
+        }, { rootMargin:'-15% 0px -45% 0px' });
+        links.forEach(link => { const section = document.querySelector(link.hash); if(section) observer.observe(section); });
+      }
+    })();
+  </script>
+</body>
+</html>
